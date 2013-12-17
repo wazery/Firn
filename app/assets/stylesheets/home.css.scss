@@ -6,6 +6,10 @@ body {
 	background-image: url('/assets/bg-night.png');
 	background-color: #cccccc;	
 	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 
 #logo {
@@ -13,10 +17,10 @@ body {
 }
 
 .top-bar-section {
-	//float: right;
-	position: absolute;
-	top: 35px;
-	right: 70px;
+	//float: center;
+	position: relative;
+	top: 50px;
+	//right: 200px;
 	letter-spacing: 5px;
 	font-size: 16px;
 	font-weight: bold;
@@ -25,9 +29,10 @@ body {
 
 .top-bar-section nav {
 	float: right;
-	position: absolute;
-	top: 20px;
-	right: 15px;
+	//position: absolute;
+	//top: 20px;
+	//right: 15px;
+	padding-right: 4%;
 }
 .top-bar-section a {
 	text-decoration: none;
@@ -47,15 +52,19 @@ body {
 	font-family: "Montserrat","Helvetica","Arial";
 	font-weight: bold;
 	font-style: normal;
-	position: relative;
-	top: 115px;
+	float: left;
+	width: 100%;
 }
 
 .button-container {
-	position: relative;
-	top: 290px;
-	left: 320px;
+	position: absolute;
+	//top: 290px;
+	//left: 320px;
+	top: 83%;
+	left: 39%;
+	width: 100%;
 	text-transform: uppercase;
+	font-size: 1.1em;
 }
 .button-container a {
 	background: #f06d26 url('/assets/icn_arrow_white.png') no-repeat 110% center;
@@ -78,9 +87,10 @@ body {
 
 #testimonials-section {
 	background-color: #e9e9e9;
-	position: absolute;
-
-	height: 200px;
+	position: fixed;
+	top: 500px;
+	left: 0;
+	height: 250px;
 	width: 100%;
 }
 
