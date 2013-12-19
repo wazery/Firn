@@ -146,6 +146,24 @@ body {
 	font-size: 20px;
 }
 
+#testimonial1-box {
+	background-color: #E5E5E5;
+	position: absolute;
+	top: 160%;
+	left: -70%;
+	border-radius: 4%;
+	height: 80%;
+	width: 320px;
+	box-shadow: 0px 2px 5px .3px rgba(0,0,0,.3);
+}
+
+#testimonial1-box h2 {
+	color: #5e5e5e;
+	font-size: 13px;
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
 #features {
 	background-color: #e5e5e5;
 	position: absolute;
