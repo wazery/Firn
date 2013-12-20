@@ -1,0 +1,45 @@
+@media screen and (max-width: 786px) 
+{
+	.nav-hold {
+		background-color: #151926;
+		padding: 0% 5%;
+	}
+
+	#nav-menu {
+		float: right;
+		color: #f9f9f9;
+		display: block;
+		padding-top: 2%;
+		padding-right: 2%;
+		cursor: pointer;
+	}
+
+	.nav-open {
+		background-color: none;
+		
+	}
+
+	.nav-list {
+		float: left;
+		display: block;
+		width: 100%;
+		overflow: hidden;
+		padding-bottom: 4%;
+		padding-left: 6%;
+		//height: 0;
+	}
+	.nav-list li {
+		float: none;
+		padding-top: 2%;
+	}
+	.nav-list li a:hover {
+		border-bottom: none;
+	}
+	.button-container a {
+		transition: none;
+	}
+	.button-container a:hover {
+		background: #f06d26;
+		cursor: pointer;
+	}
+}
