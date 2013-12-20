@@ -1,7 +1,7 @@
-@media screen and (max-width: 786px) 
+@media screen and (max-width: 767px) 
 {
 	.nav-hold {
-		background-color: #151926;
+		background-color: none;
 		padding: 0% 5%;
 	}
 
@@ -14,20 +14,27 @@
 		cursor: pointer;
 	}
 
-	.nav-open {
-		background-color: none;
-		
+	.nav-hold-open {
+		background-color: #151926;
 	}
 
 	.nav-list {
+		color: #128181;
 		float: left;
 		display: block;
 		width: 100%;
 		overflow: hidden;
+		padding-bottom: 0;
+		padding-left: 0;
+		height: 0;
+	}
+
+	.nav-list-open {
 		padding-bottom: 4%;
 		padding-left: 6%;
-		//height: 0;
+		height: auto;
 	}
+
 	.nav-list li {
 		float: none;
 		padding-top: 2%;
