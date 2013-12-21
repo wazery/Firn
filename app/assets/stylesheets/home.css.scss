@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@viewport {
+	zoom: 1.0;
+	width: device-width;
+}
+
 body {
 	background-image: url('/assets/bg-night.png');
 	background-color: #cccccc;
