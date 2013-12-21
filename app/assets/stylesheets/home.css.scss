@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@viewport {
+	zoom: 1.0;
+	width: device-width;
+}
+
 body {
 	background-image: url('/assets/bg-night.png');
 	background-color: #cccccc;
@@ -51,6 +56,45 @@ a {
 	//display: inline;
 	padding-right: 20px;
 	float: left;
+	display: block;
+}
+
+.nav-list {
+	float: right;
+	margin-top: 2%;
+}
+
+.nav-list li {
+	//display: inline;
+	padding-right: 20px;
+	float: left;
+}
+
+.nav-list li a {
+	color: #f9f9f9;
+
+	letter-spacing: 2px;
+	font-size: 16px;
+	font-weight: bold;
+
+	-webkit-font-smoothing: antialiased;
+
+	text-transform: uppercase;
+
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+.nav-list li a:hover {
+	padding-bottom: 5px;
+	border-bottom: 3px solid #f9f9f9;
+}
+
+#nav-menu {
+	display: none;
 }
 
 .nav-list li a {
@@ -257,9 +301,3 @@ footer {
 	top: 40px;
 	left: 60px;
 }
-
-//@media screen and (max-width: 1024px) {
-//	body {
-//		overflow-x: scroll;
-//	}
-//}

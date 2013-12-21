@@ -1,3 +1,7 @@
+@-ms-viewport {width: device-width;}
+@viewport {width: device-width;}
+
+/* PHONE 767px */
 @media screen and (max-width: 767px) 
 {
 	.nav-hold {
@@ -49,4 +53,8 @@
 		background: #f06d26;
 		cursor: pointer;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d6b0fa7762124c6cc99573f729607536c9bddfe6
