@@ -8,19 +8,24 @@
 }
 
 body {
-	background-image: url('/assets/bg-night.png');
+	background-image: url('/assets/sd.jpg');
 	background-color: #cccccc;
 	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
 
 	font-family: "Montserrat","Helvetica","Arial";
 	-webkit-font-smoothing:antialiased;
 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
+
 	overflow-y: scroll;
 	overflow-x: hidden;
 	//height: 1000px;
+}
+
+.wrapper {
+	overflow-x: hidden;
 }
 
 a {
@@ -155,7 +160,6 @@ a {
 	font-size: 1.6em;
 	letter-spacing: 5px;
 	text-align: center;
-	font-style: normal;
 }
 
 .button-container  {
@@ -221,7 +225,8 @@ a {
 #testimonials-section #topic {
 	//float: left;
 	color: rgba(0,0,0,.8);
-	font-size: 1.2em;
+	font-size: 1.1em;
+	line-height: 1.2em;
 	width: 38%;
 	//margin: 0 auto;
 	padding: 0 0 2% 0;
@@ -246,17 +251,19 @@ a {
 	////left: 50%;
 }
 
-#testimonial1-name, #testimonial1-company, #testimonial1 img, #testimonial2-name, #testimonial2-company, #testimonial2 img, {
+#testimonial-name, #testimonial-company,
+#testimonial1 img, #testimonial-name,
+#testimonial-company, #testimonial2 img, {
 	margin-left: 16%;
 }
-#testimonial1-name {
+#testimonial-name {
 	////position: absolute;
 	////top: 95%;
 	////left: 10%;
 	font-size: 15px;
 }
 
-#testimonial1-company {
+#testimonial-company {
 	color: #128181;
 	////position: absolute;
 	////top: 110%;
@@ -264,7 +271,7 @@ a {
 	font-size: 20px;
 }
 
-#testimonial1-box {
+#testimonial-box {
 	background-color: #E5E5E5;
 	////position: absolute;
 	////top: 160%;
@@ -276,12 +283,16 @@ a {
 	margin-top: 2%;
 }
 
-#testimonial1-box h2 {
+#testimonial-box h2 {
 	color: #5e5e5e;
 	font-size: 13px;
 	line-height: 1.8em;
 	padding-right: 2%;
 	padding-left: 2%;
+}
+
+#topic-icon {
+	padding-bottom: 2%;
 }
 
 #features {
@@ -334,7 +345,7 @@ a {
 .row-1 {
 	padding-left: 2%;
 }
-/*#features p {
+#features p {
 	color: #7c7c7c;
 	font-size: 1.2em;
 
@@ -343,7 +354,7 @@ a {
 	columns: 3;
 	padding-left: 4%;
 	padding-right: 4%;
-}*/
+}
 
 footer {
 	font-size: 14px;

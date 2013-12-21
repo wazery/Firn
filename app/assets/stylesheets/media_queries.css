@@ -2,7 +2,7 @@
 @viewport {width: device-width;}
 
 /* PHONE 767px */
-@media screen and (max-width: 767px) 
+@media screen and (max-device-width: 767px) and (max-width: 767px) 
 {
 	.nav-hold {
 		background-color: none;
@@ -73,6 +73,24 @@
 		cursor: pointer;
 	}
 
+	#testimonials-section h1 {
+		font-size: 1.6em;
+		width: 100%;
+		padding-right: 4%;
+
+	}
+	#testimonials-section #topic {
+		width: 100%;
+		margin: 0 auto;
+		margin-right: 8%;
+		text-align: center;
+	}
+	#testimonial1 {
+		display: none;
+	}
+	#testimonial2 {
+		display: none;
+	}
 	#features h1 {
 		font-size: 0.8em;
 	}
