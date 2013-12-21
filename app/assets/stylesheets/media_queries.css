@@ -1,8 +1,8 @@
 @-ms-viewport {width: device-width;}
 @viewport {width: device-width;}
 
-/* PHONE 719px */
-@media screen and (max-width: 719px) 
+/* PHONE 767px */
+@media screen and (max-width: 767px) 
 {
 	.nav-hold {
 		background-color: none;
