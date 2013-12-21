@@ -13,13 +13,14 @@ body {
 	background-repeat: no-repeat;
 
 	font-family: "Montserrat","Helvetica","Arial";
+	-webkit-font-smoothing:antialiased;
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	height: 1000px;
+	//height: 1000px;
 }
 
 a {
@@ -29,14 +30,14 @@ a {
 /* WIDTH SETTING */
 .nav-bar {
 	width: 100%;
-	padding-top: 1%;
 }
 
 .nav-hold {
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
+	////position: absolute;
+	////top: 0;
+	////right: 0;
+	////left: 0;
+	float: left;
 	width: 95%;
 	max-width: 1360px;
 	margin: 0 auto;
@@ -45,6 +46,7 @@ a {
 .nav-logo {
 	float: left;
 	display: block;
+	padding-left: 4%;
 }
 
 .nav-list {
@@ -61,6 +63,7 @@ a {
 
 .nav-list {
 	float: right;
+	padding-top: 2%;
 	margin-top: 2%;
 }
 
@@ -127,123 +130,150 @@ a {
 .top-bar-section {
 	color: white;
 	//float: center;
-	position: relative;
-	top: 50px;
+	////position: relative;
+	////top: 50px;
 	//right: 200px;
-	letter-spacing: 5px;
-	font-size: 16px;
+	
+	width: 70%;
+	margin: 0 auto;
+	padding: 12% 4% 2% 6%;
+
 	font-weight: bold;
-	font-family: "Montserrat","Helvetica","Arial";
-	-webkit-font-smoothing:antialiased;
 	text-transform: uppercase;
 }
 
 .top-bar-section nav {
-	float: right;
 	//position: absolute;
 	//top: 20px;
 	//right: 15px;
+
+	float: right;
 	padding-right: 4%;
 }
 
 .top-bar-section #main-text {
-	font-size: 35px;
+	font-size: 1.6em;
+	letter-spacing: 5px;
 	text-align: center;
 	font-style: normal;
-	float: left;
-	width: 100%;
 }
 
-.button-container {
-	position: absolute;
-	//top: 290px;
-	//left: 320px;
-	top: 47%;
-	left: 39%;
-	width: 100%;
-	text-transform: uppercase;
-	font-size: 1.1em;
+.button-container  {
+	////position: absolute;
+	////top: 47%;
+	////left: 39%;
+
+	width: 30%;
+	margin: 0 auto;
+	padding: 6% 0 4% 0; 
+	font-size: 0.8em;
 }
 
-.button-container a {
-	background: #f06d26 url('/assets/icn_arrow_white.png') no-repeat 110% center;
+.button-container-small {
+	width: 15%;
+	margin: 0 auto;
+	padding: 6% 0 4% 0; 
+	display: none;
+}
+
+#signup-button {
+	background: #f06d26 url('/assets/icn_arrow_white.png') no-repeat 120% center;
 	color: #fff;
-	border-radius: 8px;
+	border-radius: 20px;
 	padding: 15px 10px;
 	padding-right: 25px;
 
 	box-shadow: #e94e16 0px -2px 0px 0 inset,rgba(0,0,0,0.2) 0px 3px 2px 0;
 	text-decoration: none;
-	font-weight: bold;
 
 	transition: all 200ms ease-in-out;
 }
 
-.button-container a:hover {
-	background-color: rgba(255,180,50, 0.5);
+ #signup-button:hover {
+	background-color: rgba(255,180,50, 0.2);
+	box-shadow: #116881 0px -2px 0px 0 inset,rgba(0,0,0,0.2) 0px 3px 2px 0;
 	background-position: 98%;
 }
 
 #testimonials-section {
 	background-color: #F5F6F6;
-	position: absolute;
-	top: 65%;
-	left: 0;
+	////position: absolute;
+	////top: 65%;
+	////left: 0;
 	height: 50%;
 	width: 100%;
 	font-family: "Montserrat","Helvetica","Arial";
 	text-shadow: 0 1px 0 white;
 }
 
-#testimonials-section h1 {
-	color: rgba(0,0,0,.6);
-	font-size: 18px;
+#testimonials-section {
 	padding-left: 4%;
+}
+#testimonials-section h1 {
+	//float: left;
+	color: rgba(0,0,0,.6);
+	font-size: 1.6em;
 	width: 38%;
+	//margin: 0 auto;
+	padding: 2% 0 2% 0;
 }
 
 #testimonials-section #topic {
+	//float: left;
 	color: rgba(0,0,0,.8);
-	font-size: 15px;
-	padding-left: 4%;
+	font-size: 1.2em;
 	width: 38%;
-}
-
-#topic-icons {
-	padding-top: 2%;
-	padding-left: 4%;
+	//margin: 0 auto;
+	padding: 0 0 2% 0;
 }
 
 #testimonial1 {
-	position: absolute;
-	top: 10%;
-	left: 50%;
+	float: right;
+	width: 40%;
+	margin: -8%;
+	//margin: 0 auto;
+	////position: absolute;
+	////top: 10%;
+	////left: 50%;
+}
+#testimonial2 {
+	float: right;
+	width: 40%;
+	margin: -8%;
+	//margin: 0 auto;
+	////position: absolute;
+	////top: 10%;
+	////left: 50%;
 }
 
+#testimonial1-name, #testimonial1-company, #testimonial1 img, #testimonial2-name, #testimonial2-company, #testimonial2 img, {
+	margin-left: 16%;
+}
 #testimonial1-name {
-	position: absolute;
-	top: 95%;
-	left: 10%;
+	////position: absolute;
+	////top: 95%;
+	////left: 10%;
 	font-size: 15px;
 }
 
 #testimonial1-company {
 	color: #128181;
-	position: absolute;
-	top: 110%;
-	left: 22%;
+	////position: absolute;
+	////top: 110%;
+	////left: 22%;
 	font-size: 20px;
 }
 
 #testimonial1-box {
 	background-color: #E5E5E5;
-	position: absolute;
-	top: 160%;
-	left: -70%;
+	////position: absolute;
+	////top: 160%;
+	////left: -70%;
 	border-radius: 4%;
-	height: 80%;
-	width: 320px;
+	//height: 90%;
+	width: 290px;
 	box-shadow: 0px 2px 5px .3px rgba(0,0,0,.3);
+	margin-top: 2%;
 }
 
 #testimonial1-box h2 {
@@ -256,34 +286,71 @@ a {
 
 #features {
 	background-color: #e5e5e5;
-	position: absolute;
-	top: 750px;
-	left: 0;
+	////position: absolute;
+	////top: 750px;
+	////left: 0;
 	height: 290px;
 	width: 100%;
 }
 
-#features h1{
+#features h1 {
+	font-weight: bold;
+	font-size: 1.4em;
+	text-align: center;
+	line-height: 1.2em;
 	color: #5e5e5e;
-	padding-left: 4%;
+	padding: 2% 2% 2% 4%;
 }
 
-#features h2{
+.icon-features-visual {
+	background-image: url('/assets/icons.png');
+	background-repeat: no-repeat;
+}
+
+.icon-features-visual {
+	////position: absolute;
+	////top: 25%;
+	////left: 4%;
+    background-position: 0 0;
+    width: 180px;
+    height: 180px;
+}
+.icon-features-prototypes {
+    background-position: 0 -540px;
+    width: 180px;
+    height: 180px;
+}
+.icon-features-share {
+    background-position: 0 -360px;
+    width: 180px;
+    height: 180px;
+}
+.icon-features-versioning {
+    background-position: 0 -180px;
+    width: 180px;
+    height: 180px;
+}
+
+.row-1 {
+	padding-left: 2%;
+}
+/*#features p {
 	color: #7c7c7c;
-	font-size: 18px;
+	font-size: 1.2em;
+
 	-webkit-columns: 3;
 	-moz-columns: 3;
 	columns: 3;
 	padding-left: 4%;
 	padding-right: 4%;
-}
+}*/
 
 footer {
 	font-size: 14px;
 	background-color: #ffffff;
-	position: absolute;
-	bottom: -100%;
-	left: 0;
+	////position: absolute;
+	////bottom: -100%;
+	////left: 0;
 	width: 100%;
 	height: 272px;
 }
@@ -291,13 +358,13 @@ footer {
 #appreciation-text {
 	color: #3a3a3a;
 	-webkit-text-stroke: 0.5px;
-	position: relative;
-	top: 15px;
-	left: 60px;
+	////position: relative;
+	////top: 15px;
+	////left: 60px;
 }
 
 #copyright-text {
-	position: relative;
-	top: 40px;
-	left: 60px;
+	////position: relative;
+	////top: 40px;
+	////left: 60px;
 }

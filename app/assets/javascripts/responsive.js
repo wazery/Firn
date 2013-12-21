@@ -1,15 +1,13 @@
 $(document).ready(function () {
-	var opened = ".nav-list";
-	var closed = "nav-list-open";
 
-	$("#nav-menu").click(function() {
-		if ($(opened).hasClass(closed) && $(".nav-hold").hasClass("nav-hold-open")) {
-			$(opened).removeClass(closed);
-			$(".nav-hold").removeClass("nav-hold-open");
+	$('#nav-menu').click(function() {
+		if ($('.nav-list').hasClass('nav-list-open') && $('.nav-hold').hasClass('nav-hold-open')) {
+			$('.nav-list').removeClass('nav-list-open', 1000);
+			$('.nav-hold').removeClass('nav-hold-open', 1000);
 		}
 		else {
-			$(opened).addClass(closed);
-			$(".nav-hold").addClass("nav-hold-open");
+			$('.nav-list').addClass('nav-list-open', 1000);
+			$('.nav-hold').addClass('nav-hold-open', 1000);
 		}
 	});
 });

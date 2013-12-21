@@ -13,9 +13,12 @@
 		float: right;
 		color: #f9f9f9;
 		display: block;
-		padding-top: 2%;
+		padding-top: 8%;
 		padding-right: 2%;
 		cursor: pointer;
+
+		font-weight: bold;
+		text-transform: uppercase;
 	}
 
 	.nav-hold-open {
@@ -35,7 +38,7 @@
 
 	.nav-list-open {
 		padding-bottom: 4%;
-		padding-left: 6%;
+		padding-left: 4%;
 		height: auto;
 	}
 
@@ -46,15 +49,40 @@
 	.nav-list li a:hover {
 		border-bottom: none;
 	}
-	.button-container a {
+
+	/* END OF NAV QUERIES */
+	.top-bar-section #main-text {
+		font-size: 1.4em;
+	}
+
+	.button-container {
+		display: none;
+	}
+	.button-container-small {
+		display: inherit;
+	}
+	.button-container a{
 		transition: none;
+	}
+	#signup-button {
+		padding: 8px 8px;
+		padding-right: 18px;
 	}
 	.button-container a:hover {
 		background: #f06d26;
 		cursor: pointer;
 	}
-<<<<<<< HEAD
+
+	#features h1 {
+		font-size: 0.8em;
+	}
 }
-=======
+
+@media screen and (max-width: 914px) 
+{	.button-container {
+		display: none;
+	}
+	.button-container-small {
+		display: inherit;
+	}
 }
->>>>>>> d6b0fa7762124c6cc99573f729607536c9bddfe6
