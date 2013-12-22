@@ -10,6 +10,7 @@
 body {
 	background-image: url('/assets/sd.jpg');
 	background-color: #cccccc;
+	//background-position: -180px -180px;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -160,19 +161,18 @@ a {
 }
 
  #signup-button:hover {
-	background-color: rgba(255,180,50, 0.2);
+	background-color: rgba(62, 130, 139, 0.4);
 	box-shadow: #116881 0px -2px 0px 0 inset,rgba(0,0,0,0.2) 0px 3px 2px 0;
 	background-position: 98%;
 }
 
 #testimonials-section {
-	background-color: #F5F6F6;
+	background-color: rgba(245, 246, 246,1);
 	////position: absolute;
 	////top: 65%;
 	////left: 0;
-	height: 50%;
+	//height: 50%;
 	width: 100%;
-	font-family: "Montserrat","Helvetica","Arial";
 	text-shadow: 0 1px 0 white;
 }
 
@@ -217,19 +217,19 @@ a {
 	////left: 50%;
 }
 
-#testimonial-name, #testimonial-company,
-#testimonial1 img, #testimonial-name,
-#testimonial-company, #testimonial2 img, {
+.testimonial-name, .testimonial-company,
+#testimonial1 img, .testimonial-name,
+.testimonial-company, #testimonial2 img, {
 	margin-left: 16%;
 }
-#testimonial-name {
+.testimonial-name {
 	////position: absolute;
 	////top: 95%;
 	////left: 10%;
 	font-size: 15px;
 }
 
-#testimonial-company {
+.testimonial-company {
 	color: #128181;
 	////position: absolute;
 	////top: 110%;
@@ -237,7 +237,7 @@ a {
 	font-size: 20px;
 }
 
-#testimonial-box {
+.testimonial-box {
 	background-color: #E5E5E5;
 	////position: absolute;
 	////top: 160%;
@@ -249,7 +249,7 @@ a {
 	margin-top: 2%;
 }
 
-#testimonial-box h2 {
+.testimonial-box h2 {
 	color: #5e5e5e;
 	font-size: 13px;
 	line-height: 1.8em;
@@ -262,7 +262,7 @@ a {
 }
 
 #features {
-	background-color: #e5e5e5;
+	background-color: rgba(229, 229, 229,1);
 	////position: absolute;
 	////top: 750px;
 	////left: 0;
