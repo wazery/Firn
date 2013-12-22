@@ -2,14 +2,14 @@
 @viewport {width: device-width;}
 
 /* PHONE 767px */
-@media screen and (max-device-width: 767px) and (max-width: 767px) 
+@media screen and (max-device-width: 767px) 
 {
 	.nav-hold {
 		background-color: none;
 		padding: 0% 5%;
 	}
 
-	#nav-menu {
+	.nav-menu {
 		float: right;
 		color: #f9f9f9;
 		display: block;
