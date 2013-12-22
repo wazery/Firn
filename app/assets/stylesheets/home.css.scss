@@ -174,11 +174,9 @@ a {
 	//height: 50%;
 	width: 100%;
 	text-shadow: 0 1px 0 white;
-}
-
-#testimonials-section {
 	padding-left: 4%;
 }
+
 #testimonials-section h1 {
 	//float: left;
 	color: rgba(0,0,0,.6);
@@ -198,10 +196,16 @@ a {
 	padding: 0 0 2% 0;
 }
 
+#testimonials-section #heading {
+	color: rgba(0,0,0,.6);
+	font-weight: bold;
+	font-size: 1em;
+}
+
 #testimonial1 {
 	float: right;
 	width: 40%;
-	margin: -8%;
+	margin: -6%;
 	//margin: 0 auto;
 	////position: absolute;
 	////top: 10%;
@@ -210,7 +214,7 @@ a {
 #testimonial2 {
 	float: right;
 	width: 40%;
-	margin: -8%;
+	margin: -6%;
 	//margin: 0 auto;
 	////position: absolute;
 	////top: 10%;
@@ -250,11 +254,11 @@ a {
 }
 
 .testimonial-box h2 {
-	color: #5e5e5e;
-	font-size: 13px;
+	color: #275674;
+	font-style: italic;
+	font-size: .9em;
 	line-height: 1.8em;
-	padding-right: 2%;
-	padding-left: 2%;
+	padding: 4% 4% 4% 4%;
 }
 
 #topic-icon {
@@ -335,13 +339,41 @@ footer {
 #appreciation-text {
 	color: #3a3a3a;
 	-webkit-text-stroke: 0.5px;
+	padding: 3% 0 2% 4%;
 	////position: relative;
 	////top: 15px;
 	////left: 60px;
 }
 
 #copyright-text {
+	padding: 1% 0 2% 4%;
 	////position: relative;
 	////top: 40px;
 	////left: 60px;
+}
+
+.social-buttons {
+	padding: 0 0 2% 4%;
+	display: inline-block;
+}
+
+.fb-like {
+	margin-right: 4%;
+}
+
+.g-plusone {
+	margin-right: 4%;
+}
+
+.twitter-share {
+
+}
+
+.github-fork {
+	margin-left: -4%;
+	margin-right: 4%;
+}
+
+.github-follow {
+	margin-top: 2%;
 }

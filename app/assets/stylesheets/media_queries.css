@@ -2,7 +2,7 @@
 @viewport {width: device-width;}
 
 /* PHONE 767px */
-@media screen and (max-device-width: 767px) {
+@media screen and (max-width: 767px) {
 	.nav-hold {
 		background-color: none;
 		padding: 0% 5%;
@@ -72,6 +72,13 @@
 		cursor: pointer;
 	}
 
+	#features h1 {
+		font-size: 0.8em;
+	}
+}
+
+/*Re-organize testimonails section*/
+@media screen and (max-width: 1071px) {
 	#testimonials-section {
 	    display: -webkit-box;
 	    display: -moz-box;
@@ -84,8 +91,6 @@
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
 		flex-direction: column;
-
-	    //align-items: stretch;
 	}
 
 	#testimonials-section h1 {
@@ -100,6 +105,7 @@
 		-webkit-box-ordinal-group: 2;
 		-moz-box-ordinal-group: 2;
 		order: 2;
+		align-self: auto;
 		width: 90%;
 		margin: 0 0;
 		margin: 0;
@@ -107,51 +113,44 @@
 		margin-bottom: auto;
 	}
 	#testimonial1 {
-		-webkit-order: 3;
-		-ms-flex-order: 3;
-		-webkit-box-ordinal-group: 3;
-		-moz-box-ordinal-group: 3;
-		order: 3;
-		float: none;
-		margin: 0;
-		padding: 2% 0 4% 12%;
-		margin-bottom: auto;
-	}
-	#testimonial2 {
 		-webkit-order: 4;
 		-ms-flex-order: 4;
 		-webkit-box-ordinal-group: 4;
 		-moz-box-ordinal-group: 4;
 		order: 4;
 		float: none;
-		margin: 0;
-		padding: 2% 0 4% 12%;
+		margin: 0 auto;
+		padding: 2% 0 4% 0;
 		margin-bottom: auto;
 	}
+	#testimonial2 {
+		display: none;
+	}
 	.testimonial-box {
-		width: 100%;
-		//margin: 0 auto;
-		padding: 0 2%;
+		//width: 100%;
+		margin-right: 20%;
+		padding: 0 20% 0 20%;
 	}
 	#topic-icon {
-		-webkit-order: 5;
-		-ms-flex-order: 5;
-		-webkit-box-ordinal-group: 5;
-		-moz-box-ordinal-group: 5;
-		width: 95%;
+		-webkit-order: 3;
+		-ms-flex-order: 3;
+		-webkit-box-ordinal-group: 3;
+		-moz-box-ordinal-group: 3;
+		order: 3;
+		//width: 95%;
 		margin: 0 auto;
-	}
-	#features h1 {
-		font-size: 0.8em;
 	}
 }
 
+/*Remove the testimonail icon of small screen
+TODO: Change it with another smaller image*/
 @media screen and (max-width: 459px) {
 	#topic-icon {
 		display: none;
 	}
 }
 
+/*TODO: fix Firefox button-conatiner scaling issue*/
 @media screen and (max-width: 914px) {
 	.button-container {
 		display: none;
