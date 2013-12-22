@@ -75,6 +75,10 @@
 	#features h1 {
 		font-size: 0.8em;
 	}
+
+	.created-by {
+		display: none;
+	}
 }
 
 /*Re-organize testimonails section*/

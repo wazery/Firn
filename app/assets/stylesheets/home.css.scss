@@ -345,16 +345,48 @@ footer {
 	////left: 60px;
 }
 
-#copyright-text {
-	padding: 1% 0 2% 4%;
-	////position: relative;
-	////top: 40px;
-	////left: 60px;
+.footer-text {
+	float: left;
+	display: inline;
+	width: 100%;
+}
+
+.copyright-text {
+	float: left;
+	padding: 0 0 2% 4%;
+}
+
+.created-by {
+	float: left;
+	width: 55%;
+	text-align: center;
+}
+
+.created-by a,
+#blog a,
+#purpose a,
+.footer-anchors {
+	color: #999;
+}
+
+.created-by a:hover,
+#blog a:hover,
+#purpose a:hover,
+.footer-anchors a:hover{
+	color: #F06D26;
 }
 
 .social-buttons {
+	float: left;
+	//margin: 0 auto;
 	padding: 0 0 2% 4%;
 	display: inline-block;
+}
+
+.social-buttons p {
+	color: #999;
+	padding: 4% 0 2% 0;
+	margin-bottom: 2%;
 }
 
 .fb-like {
@@ -363,17 +395,28 @@ footer {
 
 .g-plusone {
 	margin-right: 4%;
+	margin-left: 1%;
 }
 
-.twitter-share {
-
+.twitter-share-button {
+	margin-left: -4%;
 }
 
 .github-fork {
-	margin-left: -4%;
-	margin-right: 4%;
+	margin-right: 2%;
 }
 
-.github-follow {
-	margin-top: 2%;
+.footer-links {
+	float: right;
+	margin: -14% 4% 0 0;
+	text-align: right;
+	line-height: 1.8em;
+}
+
+.footer-links #about{
+	font-weight: bold;
+}
+
+#footer-icons {
+
 }
