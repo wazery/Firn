@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '3.2.13'
 
@@ -10,10 +10,10 @@ gem 'rails', '3.2.13'
 
 gem 'better_errors'
 gem 'newrelic_rpm'
-gem 'capistrano'
 gem 'rails_12factor'
-
 gem 'pg'
+
+gem 'nprogress-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.

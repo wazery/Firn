@@ -8,7 +8,7 @@
 }
 
 body {
-	background-image: url('/assets/sd.jpg');
+	background-image: url('/assets/sd1.jpg');
 	background-color: #cccccc;
 	//background-position: -180px -180px;
 	background-repeat: no-repeat;
@@ -167,7 +167,7 @@ a {
 }
 
 #testimonials-section {
-	background-color: rgba(245, 246, 246,1);
+	background-color: rgb(245, 246, 246);
 	////position: absolute;
 	////top: 65%;
 	////left: 0;
@@ -283,15 +283,9 @@ a {
 	padding: 2% 2% 2% 4%;
 }
 
-.icon-features-visual {
+.features-visual-icon{
 	background-image: url('/assets/icons.png');
 	background-repeat: no-repeat;
-}
-
-.icon-features-visual {
-	////position: absolute;
-	////top: 25%;
-	////left: 4%;
     background-position: 0 0;
     width: 180px;
     height: 180px;
@@ -315,6 +309,11 @@ a {
 .row-1 {
 	padding-left: 2%;
 }
+
+.features-visual-icon{
+	padding-left: 4%;
+}
+
 /*#features p {
 	color: #7c7c7c;
 	font-size: 1.2em;
@@ -325,6 +324,52 @@ a {
 	padding-left: 4%;
 	padding-right: 4%;
 }*/
+
+.signup {
+	background-color: rgb(245, 246, 246);
+}
+
+.signup #signup-title {
+	font-weight: bold;
+	font-size: 1.8em;
+	text-align: center;
+	line-height: 1.2em;
+	color: #5e5e5e;
+	padding: 2% 2% 6% 4%; 
+}
+
+input[type="email"], input[type="password"] {
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #E5E5E5;
+	width: 35%;
+	height: 50px;
+	margin: -2% 0 8% 6%;
+	padding-left: 1%;
+	border: none;
+	outline: none;
+}
+
+input[type="email"]:hover, input[type="password"]:hover {
+	box-shadow: 1px 1px 2px #bcbaba;
+}
+
+.signup .email-icon{
+	background: url("/assets/icons.png");
+	width: 18px;
+	height: 18px;
+	background-position: 0 -954px;
+	position: absolute;
+	margin: 1.1% 0 0 -3%;
+}
+
+.signup .password-icon{
+	background: url("/assets/icons.png");
+	width: 18px;
+	height: 18px;
+	background-position: 0 -936px;
+	position: absolute;
+	margin: 1% 0 0 -2.6%;
+}
 
 footer {
 	font-size: 14px;
@@ -417,6 +462,10 @@ footer {
 	font-weight: bold;
 }
 
-#footer-icons {
+.footer-icons {
+	margin-left: 6%;
+}
 
+.footer-icons img:hover {
+	opacity: .8;
 }
