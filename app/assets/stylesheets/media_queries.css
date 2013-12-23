@@ -2,7 +2,7 @@
 @viewport {width: device-width;}
 
 /* PHONE 767px */
-@media screen and (max-device-width: 767px) {
+@media screen and (max-width: 767px) {
 	.nav-hold {
 		background-color: none;
 		padding: 0% 5%;
@@ -72,7 +72,7 @@
 		cursor: pointer;
 	}
 
-	#features h1 {
+	#testimonials h1 {
 		font-size: 0.8em;
 	}
 
@@ -83,7 +83,7 @@
 
 /*Re-organize testimonails section*/
 @media screen and (max-width: 1071px) {
-	#testimonials-section {
+	#features-section {
 	    display: -webkit-box;
 	    display: -moz-box;
 	    display: -webkit-flex;
@@ -97,17 +97,17 @@
 		flex-direction: column;
 	}
 
-	#testimonials-section h1 {
+	#features-section h1 {
 		font-size: 1.6em;
 		text-align: center;
 		width: 95%;
 		margin-bottom: auto;
 	}
-	#testimonials-section #topic {
-		-webkit-order: 2;
+	#features-section #topic {
+/*		-webkit-order: 2;
 		-ms-flex-order: 2;
 		-webkit-box-ordinal-group: 2;
-		-moz-box-ordinal-group: 2;
+		-moz-box-ordinal-group: 2;*/
 		order: 2;
 		align-self: auto;
 		width: 90%;
@@ -117,17 +117,31 @@
 		margin-bottom: auto;
 	}
 	#testimonial1 {
-		-webkit-order: 4;
+/*		-webkit-order: 4;
 		-ms-flex-order: 4;
 		-webkit-box-ordinal-group: 4;
-		-moz-box-ordinal-group: 4;
+		-moz-box-ordinal-group: 4;*/
 		order: 4;
 		float: none;
 		margin: 0 auto;
 		padding: 2% 0 4% 0;
 		margin-bottom: auto;
 	}
+	#testimonials {
+		width: 100%;
+		display: block;
+	}
+	#testimonial1 {
+		float: left;
+		width: 20%;
+		margin-left: 2%;
+	}
 	#testimonial2 {
+		float: right;
+		margin-top: 4%;
+		margin-right: 30%;
+	}
+	#testimonial3 {
 		display: none;
 	}
 	.testimonial-box {
@@ -152,6 +166,13 @@ TODO: Change it with another smaller image*/
 	#topic-icon {
 		display: none;
 	}
+
+	#testimonial2 {
+		display: none;
+	}
+	#testimonial3 {
+		display: none;
+	}
 }
 
 /*TODO: fix Firefox button-conatiner scaling issue*/
@@ -161,5 +182,38 @@ TODO: Change it with another smaller image*/
 	}
 	.button-container-small {
 		display: inherit;
+	}
+}
+
+@media screen and (max-width: 982px) {
+	.prof {
+		width: 100%;
+		padding: 0 0 0 110%;
+	}
+	#testimonial1 img{
+		padding: 0;
+	}
+	.testimonial-name {
+		padding: 0 0 0 15%;
+	}
+	.testimonial-company {
+		padding: 0;
+	}
+	#testimonial1 {
+		width: none;
+		margin: 0 auto;
+		margin-left: 20%;
+	}
+	.testimonial-box {
+		//width: 380px;
+		margin-right: none;
+		padding: none;
+	}
+
+	#testimonial2 {
+		display: none;
+	}
+	#testimonial3 {
+		display: none;
 	}
 }
