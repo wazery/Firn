@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Firn</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<title>Firn</title>
+		<%= stylesheet_link_tag    "application", :media => "all" %>
+		<%= javascript_include_tag "application" %>
+		<%= csrf_meta_tags %>
+
+	<meta http-equiv="Content-Type" content="text/html; /charset=UTF-8">
+	<title>Firn, Social Activites</title>
+
+	<meta name="viewport" ="width=device-width, initial-scale=1.0, maximum-scale-2.0"/>
 </head>
+
 <body>
-
-<%= yield %>
-
+	<div id="container">
+		<div id="user_nav">
+			<% if current_user %>
+				Signed in as <strong><%= current_user.name %></strong>
+				<%= link_to "Signout", signout_path, id: "sign_out" %>
+				<% else %>
+				<%= link_to "Signin with FB", "/auth/facebook", id: "sign_in" %>
+				<% end %>
+				
+				<%= yield %>
+		</div>
+	</div>
 </body>
 </html>

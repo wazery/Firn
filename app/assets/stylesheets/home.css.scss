@@ -329,7 +329,7 @@ input[type="email"]:focus, input[type="password"]:focus {
 	float: right;
 	background-color: #F06D26;
 	border-radius: 5px;
-	box-shadow: 1px 1px 1px #E5E5E5;
+	box-shadow: 0px 1px 1px #bcbcbc;
 	width: 10%;
 	height: 53px;
 	margin-top: -1.7%;
@@ -366,6 +366,65 @@ input[type="email"]:focus, input[type="password"]:focus {
 	background-position: 0 -936px;
 	position: absolute;
 	//margin: 1% 0 0 -2.6%;
+}
+
+.signup-fb {
+	float: left;
+	background-color: #4763B2;
+	border-radius: 5px;
+	box-shadow: 0px 1px 1px #bcbcbc;
+	width: 15%;
+	height: 30px;
+	margin-top: -5%;
+	margin-left: 6%;
+	padding-top: .5%;
+	text-align: center;
+	line-height: 1.8em;
+	font-size: .8em;
+	font-weight: bold;
+	transition: all 200ms ease-in-out;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.signup-fb:hover {
+	background-color: #6984ce;
+}
+
+.signup-twitter {
+	float: left;
+	background-color: #7CC3E5;
+	border-radius: 5px;
+	box-shadow: 0px 1px 1px #bcbcbc;
+	width: 15%;
+	height: 30px;
+	margin-top: -5%;
+	margin-left: 22%;
+	padding-top: .5%;
+	text-align: center;
+	line-height: 1.8em;
+	font-size: .8em;
+	font-weight: bold;
+	transition: all 200ms ease-in-out;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.signup-twitter:hover {
+	background-color: #96d8f7;
+}
+
+.signup #have-account {
+	float: left;
+	color: #999;
+	margin-top: -4.2%;
+	margin-left: 38%;
+}
+
+.signup #have-account a {
+	color: #F06D26;
 }
 
 footer {
