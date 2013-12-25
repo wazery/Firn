@@ -12,9 +12,9 @@ body {
 	background-color: #cccccc;
 	//background-position: -180px -180px;
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
+	//-webkit-background-size: cover;
+	//-moz-background-size: cover;
+	background-size: 100% auto;
 
 	font-family: "Montserrat","Helvetica","Arial";
 	-webkit-font-smoothing:antialiased;
@@ -148,7 +148,6 @@ a {
 
 #features-section {
 	background-color: rgb(245, 246, 246);
-	//height: 50%;
 	width: 100%;
 	text-shadow: 0 1px 0 white;
 	padding-left: 4%;
@@ -156,19 +155,34 @@ a {
 
 #features-section h1 {
 	color: rgba(0,0,0,.6);
-	font-size: 1.6em;
-	width: 38%;
-	padding: 2% 0 2% 0;
+	font-size: 1.2em;
+	width: 45%;
 }
 
-#features-section #topic {
-	//float: left;
+#topic1-heading {
+	padding: 2% 0 1% 0;
+}
+
+#topic2-heading {
+	float: right;
+	margin-top: -5%;
+	padding: 2% 3% 1% 2%;
+}
+
+#features-section #topic, #topic2{
 	color: rgba(0,0,0,.8);
-	font-size: 1.1em;
-	line-height: 1.2em;
+	font-size: 1em;
+	line-height: 1.4em;
+	width: 44%;
+	padding-bottom: 2%;
+}
+
+#topic2 {
+	float: right;
 	width: 38%;
-	//margin: 0 auto;
-	padding: 0 0 2% 0;
+	margin-right: -40%;
+	padding-top: 2%;
+	padding-left: 2%;
 }
 
 #features-section #heading {
@@ -178,7 +192,14 @@ a {
 }
 
 #topic-icon {
-	padding-bottom: 2%;
+	float: right;
+	margin-top: -14%;
+	margin-right: 9%;
+	//padding-bottom: 2%;
+}
+
+#topic2-icon {
+	margin-bottom: 2%;
 }
 
 #testimonials {
@@ -226,7 +247,7 @@ a {
 .testimonial-name, .testimonial-company,
 #testimonial1 img, .testimonial-name,
 .testimonial-company, #testimonial2 img, #testimonial3 img{
-	padding-left: 75%;
+	padding-left: 45%;
 }
 .testimonial-name {
 	font-size: 15px;
@@ -244,7 +265,6 @@ a {
 .testimonial-box {
 	background-color: white;
 	border-radius: 5px;
-	//height: 90%;
 	width: 380px;
 	box-shadow: 1px 1px 1px #d3d3d3;
 	margin-top: 2%;
@@ -282,17 +302,6 @@ a {
 .features-visual-icon{
 	padding-left: 4%;
 }
-
-/*#features p {
-	color: #7c7c7c;
-	font-size: 1.2em;
-
-	-webkit-columns: 3;
-	-moz-columns: 3;
-	columns: 3;
-	padding-left: 4%;
-	padding-right: 4%;
-}*/
 
 .signup {
 	background-color: rgb(245, 246, 246);

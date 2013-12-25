@@ -135,6 +135,10 @@ footer {
 	text-align: center;
 }
 
+footer ul {
+	list-style-type: none;
+}
+
 .created-by a,
 #blog a,
 #purpose a,
