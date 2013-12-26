@@ -7,4 +7,7 @@ class HomeController < ApplicationController
   	@other = params[:other]
   end
 
+  def about
+  	# Render about page
+  end
 end

@@ -66,7 +66,14 @@ a {
 	padding-right: 4%;
 }
 
-.top-bar-section #main-text {
+.top-bar-section #title {
+	font-family: "Open Sans";
+	font-size: 5em;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+.top-bar-section p {
 	font-family: "Open Sans";
 	font-size: 2.5em;
 	letter-spacing: 5px;

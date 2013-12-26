@@ -16,6 +16,22 @@ a {
 	padding: 10% 2% 4% 5%; 
 }
 
+.invalid_notice{
+	height:25px;
+	width: 200px;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+.invalid_notice p{
+	text-align:center;
+	margin-top:3px;
+}
+.invalid_notice{
+	background-color: #FFCCCC;
+	border:1px solid red;
+}
+      
 input[type="text"], input[type="password"] {
 	font-family: "Open Sans";
 	border-radius: 5px;
