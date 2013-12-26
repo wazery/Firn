@@ -7,7 +7,4 @@ class HomeController < ApplicationController
   	@other = params[:other]
   end
 
-  def redirection
-  	redirect_to 'http://www.google.com'
-  end
 end

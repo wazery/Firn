@@ -2,6 +2,91 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+.title {
+	font-family: "Open Sans";
+	font-weight: bold;
+	font-size: 2.2em;
+	letter-spacing: 5px;
+	text-align: left;
+	color: white;
+	margin: 12% 0 0 10%;
+}
+.tabs {
+	height: 290px;
+}
+.tabs input[type=radio] {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+.tabs {
+	width: 80%;
+	float: none;
+	list-style: none;
+	position: relative;
+	padding: 0;
+	margin: 75px auto;
+}
+.tabs li{
+	float: left;
+}
+.tabs label {
+	display: block;
+	padding: 10px 20px;
+	border-radius: 2px 2px 0 0;
+	color: #C4C4C4;
+	font-size: 24px;
+	font-weight: normal;
+	font-family: 'Lily Script One', helveti;
+	background: rgba(255,255,255,0.2);
+	cursor: pointer;
+	position: relative;
+	top: 3px;
+
+	-webkit-transition: all 100ms ease-in-out;
+	-moz-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+}
+.tabs label:hover {
+	background: rgba(232, 100, 27, 0.5);
+	top: 0;
+}
+
+[id^=tab]:checked + label {
+	background: #E8641B;
+	color: white;
+	top: 0;
+}
+
+[id^=tab]:checked ~ [id^=tab-content] {
+  display: block;
+}
+.tab-content{
+	border-radius: 10px;
+	z-index: 2;
+	display: none;
+	text-align: left;
+	width: 100%;
+	height: 90%;
+	font-size: 20px;
+	line-height: 140%;
+	padding-top: 10px;
+	background: rgba(255,255,255,.5);
+	padding: 15px;
+	color: white;
+	position: absolute;
+	top: 53px;
+	left: 0;
+
+	box-sizing: border-box;
+	-webkit-animation-duration: 0.5s;
+	-o-animation-duration: 0.5s;
+	-moz-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+}
+
 @viewport {
 	zoom: 1.0;
 	width: device-width;
@@ -33,7 +118,6 @@ a {
 	color: white;
 }
 
-/* WIDTH SETTING */
 .nav-bar {
 	width: 100%;
 }
@@ -387,7 +471,6 @@ input[type="email"]:focus, input[type="password"]:focus {
 	height: 18px;
 	background-position: 0 -954px;
 	position: absolute;
-	//margin: 1.1% 0 0 -3%;
 }
 
 .signup .password-icon{
@@ -396,7 +479,6 @@ input[type="email"]:focus, input[type="password"]:focus {
 	height: 18px;
 	background-position: 0 -936px;
 	position: absolute;
-	//margin: 1% 0 0 -2.6%;
 }
 
 .signup-fb {
@@ -514,7 +596,6 @@ footer {
 
 .social-buttons {
 	float: left;
-	//margin: 0 auto;
 	padding: 0 0 2% 4%;
 	display: inline-block;
 }
@@ -559,7 +640,6 @@ footer {
 	position: absolute;
 	left: 46%;
 	margin-top: 4%;
-	//bottom: 2%;
 }
 
 .footer-icons img:hover {

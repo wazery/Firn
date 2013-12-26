@@ -1,17 +1,15 @@
 Firn::Application.routes.draw do
   
-  root :to => 'home#index'
+  root :to => 'sessions#index', :as => 'welcome'
 
-  get "home/index"
-  get 'home/redirection'
+  get 'home' => 'home#index', :as => 'home'
 
-  get "signup" => "users#new", :as => "signup"
-  get "login" => "sessions#new", :as => "login"
+  get 'signup' => 'users#new', :as => 'signup'
+  get 'login' => 'sessions#new', :as => 'login'
   match 'signout', to: 'sessions#destroy', as: 'signout'
 
   match 'auth/:provider/callback', to: 'sessions#create'
   match 'auth/failure', to: redirect('/')
-  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

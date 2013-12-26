@@ -13,6 +13,7 @@ $(document).ready(function () {
 	});
 
 
+//Put underline under current page name in the nav bar
 var path = window.location.pathname;
 var directories = path.split("/");
 var lastDirecotry = directories[(directories.length - 1)];
