@@ -16,8 +16,9 @@ body {
 	//-moz-background-size: cover;
 	background-size: 100% auto;
 
-	font-family: "Montserrat","Helvetica","Arial";
-	-webkit-font-smoothing:antialiased;
+	font-family: "Open Sans";
+
+	-webkit-font-smoothing: antialiased;
 
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -38,7 +39,6 @@ a {
 }
 
 .nav-hold {
-
 	float: left;
 	width: 95%;
 	max-width: 1360px;
@@ -63,9 +63,10 @@ a {
 }
 
 .nav-list li {
-	//display: inline;
 	padding-right: 20px;
 	float: left;
+	font-weight: normal;
+	font-family: "Open Sans";
 }
 
 .nav-list li a {
@@ -73,7 +74,6 @@ a {
 	letter-spacing: 2px;
 	font-size: 16px;
 	font-weight: bold;
-	-webkit-font-smoothing: antialiased;
 	text-transform: uppercase;
 
 	-webkit-transition: all 200ms ease-in-out;
@@ -84,6 +84,11 @@ a {
 }
 
 .nav-list li a:hover {
+	padding-bottom: 5px;
+	border-bottom: 3px solid #f9f9f9;
+}
+
+.underline {
 	padding-bottom: 5px;
 	border-bottom: 3px solid #f9f9f9;
 }
@@ -108,6 +113,8 @@ a {
 }
 
 .top-bar-section #main-text {
+	font-family: "Open Sans";
+	font-weight: bold;
 	font-size: 1.6em;
 	letter-spacing: 5px;
 	text-align: center;
@@ -136,6 +143,7 @@ a {
 
 	box-shadow: #e94e16 0px -2px 0px 0 inset,rgba(0,0,0,0.2) 0px 3px 2px 0;
 	text-decoration: none;
+	font-family: "Open Sans";
 
 	transition: all 200ms ease-in-out;
 }
@@ -150,10 +158,12 @@ a {
 	background-color: rgb(245, 246, 246);
 	width: 100%;
 	text-shadow: 0 1px 0 white;
+	font-family: "Open Sans";
 	padding-left: 4%;
 }
 
 #features-section h1 {
+	font-family: "Open Sans";
 	color: rgba(0,0,0,.6);
 	font-size: 1.2em;
 	width: 45%;
@@ -161,12 +171,14 @@ a {
 
 #topic1-heading {
 	padding: 2% 0 1% 0;
+	font-family: "Open Sans";
 }
 
 #topic2-heading {
 	float: right;
 	margin-top: -5%;
 	padding: 2% 3% 1% 2%;
+	font-family: "Open Sans";
 }
 
 #features-section #topic, #topic2{
@@ -175,6 +187,7 @@ a {
 	line-height: 1.4em;
 	width: 44%;
 	padding-bottom: 2%;
+	font-family: "Open Sans";
 }
 
 #topic2 {
@@ -183,10 +196,12 @@ a {
 	margin-right: -40%;
 	padding-top: 2%;
 	padding-left: 2%;
+	font-family: "Open Sans";
 }
 
 #features-section #heading {
 	color: rgba(0,0,0,.6);
+	font-family: "Open Sans";
 	font-weight: bold;
 	font-size: 1em;
 }
@@ -210,6 +225,7 @@ a {
 }
 
 #testimonials h1 {
+	font-family: "Open Sans";
 	font-weight: bold;
 	font-size: 1.4em;
 	text-align: center;
@@ -250,6 +266,7 @@ a {
 	padding-left: 45%;
 }
 .testimonial-name {
+	font-family: "Open Sans";
 	font-size: 15px;
 	padding-left: 48%;
 }
@@ -257,6 +274,7 @@ a {
 .testimonial-company {
 	color: #128181;
 	font-size: 20px;
+	font-family: "Open Sans";
 	display: block;
 	padding-left: 34%;
 	text-align: center;
@@ -272,6 +290,7 @@ a {
 
 .testimonial-box h2 {
 	color: #275674;
+	font-family: "Open Sans";
 	font-style: italic;
 	font-size: .9em;
 	text-align: center;
@@ -308,6 +327,7 @@ a {
 }
 
 .signup #signup-title {
+	font-family: "Open Sans";
 	font-weight: bold;
 	font-size: 1.8em;
 	text-align: center;
@@ -317,6 +337,7 @@ a {
 }
 
 input[type="email"], input[type="password"] {
+	font-family: "Open Sans";
 	border-radius: 5px;
 	box-shadow: 1px 1px 1px #E5E5E5;
 	width: 35%;
@@ -345,6 +366,7 @@ input[type="email"]:focus, input[type="password"]:focus {
 	margin-right: 6%;
 	padding-top: .4%;
 	color: white;
+	font-family: "Open Sans";
 	text-align: center;
 	line-height: .8em;
 	font-size: 1.1em;
@@ -387,6 +409,7 @@ input[type="email"]:focus, input[type="password"]:focus {
 	margin-top: -5%;
 	margin-left: 6%;
 	padding-top: .5%;
+	font-family: "Open Sans";
 	text-align: center;
 	line-height: 1.8em;
 	font-size: .8em;
@@ -411,6 +434,7 @@ input[type="email"]:focus, input[type="password"]:focus {
 	margin-top: -5%;
 	margin-left: 22%;
 	padding-top: .5%;
+	font-family: "Open Sans";
 	text-align: center;
 	line-height: 1.8em;
 	font-size: .8em;
@@ -428,11 +452,13 @@ input[type="email"]:focus, input[type="password"]:focus {
 .signup #have-account {
 	float: left;
 	color: #999;
+	font-family: "Open Sans";
 	margin-top: -4.2%;
 	margin-left: 38%;
 }
 
 .signup #have-account a {
+	font-family: "Open Sans";
 	color: #F06D26;
 }
 
@@ -446,23 +472,27 @@ footer {
 #appreciation-text {
 	color: #3a3a3a;
 	-webkit-text-stroke: 0.5px;
+	font-family: "Open Sans";
 	padding: 3% 0 2% 4%;
 }
 
 .footer-text {
 	float: left;
 	display: inline;
+	font-family: "Open Sans";
 	width: 100%;
 }
 
 .copyright-text {
 	float: left;
+	font-family: "Open Sans";
 	padding: 0 0 2% 4%;
 }
 
 .created-by {
 	float: left;
 	width: 55%;
+	font-family: "Open Sans";
 	text-align: center;
 }
 
@@ -470,6 +500,7 @@ footer {
 #blog a,
 #purpose a,
 .footer-anchors {
+	font-family: "Open Sans";
 	color: #999;
 }
 
@@ -477,6 +508,7 @@ footer {
 #blog a:hover,
 #purpose a:hover,
 .footer-anchors a:hover{
+	font-family: "Open Sans";
 	color: #F06D26;
 }
 
@@ -489,6 +521,7 @@ footer {
 
 .social-buttons p {
 	color: #999;
+	font-family: "Open Sans";
 	padding: 4% 0 2% 0;
 	margin-bottom: 2%;
 }
@@ -518,6 +551,7 @@ footer {
 }
 
 .footer-links #about{
+	font-family: "Open Sans";
 	font-weight: bold;
 }
 

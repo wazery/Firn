@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Firn, Page not found!</title>
+	<title>Firn, Log in</title>
 
 	<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 
-	<link rel="stylesheet" type="text/css" href="404.css">
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= stylesheet_link_tag    "sessions", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    
 	<meta http-equiv="Content-Type" content="text/html; /charset=UTF-8">
 	
 	<meta name="viewport" ="width=device-width, initial-scale=1.0, maximum-scale-2.0"/>
@@ -34,23 +38,48 @@
 
 <nav class="nav-bar">
 	<div class="nav-hold">
-		<a href="#" class="nav-logo"> 
+		<a href="/" class="nav-logo"> 
 			<img id="logo" src="/assets/logo.png" alt="Firn, the social activities!" /> 
 		</a>
+		<a class="nav-menu" href="#menu">Menu &#9776;</a>
+		<ul class="nav-list" id="nav">
+			<li> <a class="nav-home" href="/">Home</a> </li>
+			<li> <a class="nav-about" href="/about">About</a> </li>
+			<li> <a class="nav-login" href="/login">Log in</a> </li>
+			<li> <a class="nav-signup" href="/#signup">Sign up</a> </li>
+		</ul>
 	</div>
 </nav>
 
-<section class="top-bar-section">
 
-	<h1 id="main-text">404! This is not the web page you are looking for.
-	</h1>
+<section class="login-section">
 
-	<div class="button-container">
-		<a href="/" id="signup-button">Get back to home! </a>
+	<h1 id="login-title">LOG IN</h1>
+
+	<form>
+		<input type="text" name="username" placeholder="Enter your user name">
+
+		<span class="email-icon"></span>
+
+		<input type="password" name="password" placeholder="Enter your password">
+
+		<span class="password-icon"></span>
+
+		<input type="submit" value="LOG IN" class="login-button">
+	</form>
+
+	<div class="login-fb">
+		<% if not current_user %>
+		<%= link_to "Log in with Facebook", "/auth/facebook", id: "sign_in" %>
+		<% end %>
 	</div>
-	<div class="button-container-small">
-		<a href="#signup" id="signup-button">Get back to home!</a>
-	</div>
+
+	<% if not current_user %>
+	<%= link_to "Log in with Twitter", "/auth/facebook", class: "login-twitter" %>
+	<% end %>
+
+	<a id="need-signup" href="/#signup">Need to sign up?</a>
+	<a id="forgot-password" href="/forgot_password">Forgot your password?</a>
 
 </section>
 

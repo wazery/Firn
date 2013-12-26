@@ -11,4 +11,17 @@ $(document).ready(function () {
 			$('.nav-hold').addClass('nav-hold-open', 200);
 		}
 	});
+
+
+var path = window.location.pathname;
+var directories = path.split("/");
+var lastDirecotry = directories[(directories.length - 1)];
+
+if (lastDirecotry == "about") {
+	$('.nav-about').addClass("underline");
+}
+else if (lastDirecotry == "login") {
+	$('.nav-login').addClass("underline");
+}
+
 });

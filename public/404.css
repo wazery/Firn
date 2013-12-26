@@ -12,8 +12,8 @@ body {
 	-moz-background-size: cover;
 	background-size: cover;
 
-	font-family: "Montserrat","Helvetica","Arial";
-	-webkit-font-smoothing:antialiased;
+	font-family: "Open Sans";
+	-webkit-font-smoothing: antialiased;
 
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -34,7 +34,6 @@ a {
 }
 
 .nav-hold {
-
 	float: left;
 	width: 95%;
 	max-width: 1360px;
@@ -57,6 +56,7 @@ a {
 	margin: 0 auto;
 	padding: 12% 4% 2% 6%;
 
+	font-family: "Open Sans";
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -67,7 +67,8 @@ a {
 }
 
 .top-bar-section #main-text {
-	font-size: 1.6em;
+	font-family: "Open Sans";
+	font-size: 2.5em;
 	letter-spacing: 5px;
 	text-align: center;
 }
@@ -95,6 +96,7 @@ a {
 
 	box-shadow: #e94e16 0px -2px 0px 0 inset,rgba(0,0,0,0.2) 0px 3px 2px 0;
 	text-decoration: none;
+	font-family: "Open Sans";
 
 	transition: all 200ms ease-in-out;
 }
@@ -114,6 +116,7 @@ footer {
 
 #appreciation-text {
 	color: #3a3a3a;
+	font-family: "Open Sans";
 	-webkit-text-stroke: 0.5px;
 	padding: 3% 0 2% 4%;
 }
@@ -121,22 +124,26 @@ footer {
 .footer-text {
 	float: left;
 	display: inline;
+	font-family: "Open Sans";
 	width: 100%;
 }
 
 .copyright-text {
 	float: left;
+	font-family: "Open Sans";
 	padding: 0 0 2% 4%;
 }
 
 .created-by {
 	float: left;
 	width: 55%;
+	font-family: "Open Sans";
 	text-align: center;
 }
 
 footer ul {
 	list-style-type: none;
+	font-family: "Open Sans";
 }
 
 .created-by a,

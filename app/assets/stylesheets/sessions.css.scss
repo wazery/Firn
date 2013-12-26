@@ -1,0 +1,144 @@
+/*.login-section {
+	background-color: rgb(245, 246, 246);
+}*/
+
+a {
+	font-family: "Open Sans";
+}
+
+.login-section #login-title {
+	font-family: "Open Sans";
+	font-weight: bold;
+	font-size: 8em;
+	text-align: left;
+	line-height: 1.2em;
+	color: rgb(255, 255, 255);
+	padding: 10% 2% 4% 5%; 
+}
+
+input[type="text"], input[type="password"] {
+	font-family: "Open Sans";
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #000;
+	width: 35%;
+	height: 50px;
+	margin: -2% -4% 8% 6%;
+	padding-left: 1%;
+	border: none;
+	outline: none;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+	box-shadow: 1px 1px 2px #F06D26;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+	box-shadow: 1px 1px 1px #F06D26;
+}
+
+.login-button {
+	float: right;
+	background-color: #F06D26;
+	border-radius: 5px;
+	box-shadow: 0px 1px 1px #bf5318;
+	width: 10%;
+	height: 53px;
+	margin-top: -1.7%;
+	margin-right: 6%;
+	padding-top: .4%;
+	color: white;
+	font-family: "Open Sans";
+	text-align: center;
+	line-height: .8em;
+	font-size: 1.1em;
+	font-weight: bold;
+	transition: all 200ms ease-in-out;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.login-button:hover {
+	background-color: #f47d3d;
+}
+
+.login-section .email-icon{
+	background: url("/assets/icons.png");
+	width: 18px;
+	height: 18px;
+	background-position: 0 -954px;
+	position: absolute;
+	//margin: 1.1% 0 0 -3%;
+}
+
+.login-section .password-icon{
+	background: url("/assets/icons.png");
+	width: 18px;
+	height: 18px;
+	background-position: 0 -936px;
+	position: absolute;
+	//margin: 1% 0 0 -2.6%;
+}
+
+.login-fb {
+	float: left;
+	background-color: #4763B2;
+	border-radius: 5px;
+	box-shadow: 0px 1px 1px #1f4091;
+	width: 15%;
+	height: 30px;
+	margin-top: -5%;
+	margin-left: 6%;
+	padding-top: .5%;
+	font-family: "Open Sans";
+	text-align: center;
+	line-height: 1.8em;
+	font-size: .8em;
+	font-weight: bold;
+	transition: all 200ms ease-in-out;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.login-fb:hover {
+	background-color: #6984ce;
+}
+
+.login-twitter {
+	float: left;
+	background-color: #7CC3E5;
+	border-radius: 5px;
+	box-shadow: 0px 1px 1px #4caedb;
+	width: 15%;
+	height: 30px;
+	margin-top: -5%;
+	margin-left: 22%;
+	padding-top: .5%;
+	font-family: "Open Sans";
+	text-align: center;
+	line-height: 1.8em;
+	font-size: .8em;
+	font-weight: bold;
+	transition: all 200ms ease-in-out;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.login-twitter:hover {
+	background-color: #96d8f7;
+}
+
+.login-section #need-signup {
+	float: left;
+	color: #999;
+	margin-top: -4.2%;
+	margin-left: 38%;
+}
+
+.login-section #forgot-password {
+	float: left;
+	color: #999;
+	margin-top: -4.2%;
+	margin-left: 49%;
+}
