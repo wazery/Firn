@@ -468,7 +468,8 @@ input[type="email"]:focus, input[type="password"]:focus {
 	letter-spacing: 5px;
 	text-align: left;
 	color: white;
-	margin: 12% 0 -4% 10%;
+	margin-left: 9.5%;
+	padding-top: 9%;
 }
 .tabs {
 	height: 290px;
@@ -484,7 +485,7 @@ input[type="email"]:focus, input[type="password"]:focus {
 	list-style: none;
 	position: relative;
 	padding: 0;
-	margin: 75px auto;
+	margin: 40px auto;
 }
 .tabs li{
 	float: left;
@@ -545,7 +546,35 @@ input[type="email"]:focus, input[type="password"]:focus {
 	animation-duration: 0.5s;
 }
 
+
 /* END OF DASHBARD STYLES */
+
+/* ABOUT PAGE STYLES */
+
+.about-title {
+	font-family: "Open Sans";
+	font-weight: bold;
+	font-size: 3.2em;
+	letter-spacing: 5px;
+	text-align: left;
+	color: white;
+	margin-left: 9.5%;
+	padding-top: 9%;
+}
+
+.about-paragraph {
+	text-align: left;
+	color: white;
+	font-family: "Open Sans";
+	font-size: 1.4em;
+	line-height: 1.8em;
+	width: 70%;
+	margin-left: 9.5%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+/* END OF ABOUT PAGE STYLES */
 
 footer {
 	font-size: 14px;
