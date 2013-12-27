@@ -24,5 +24,8 @@ if (lastDirecotry == "about") {
 else if (lastDirecotry == "login") {
 	$('.nav-login').addClass("underline");
 }
+else if (lastDirecotry == "signup") {
+	$('.nav-signup').addClass("underline");
+}
 
 });

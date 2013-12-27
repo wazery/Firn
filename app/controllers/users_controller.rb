@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   	@user = User.new(params[:user])
   	if @user.save
   		session[:user_id] = @user.id
-  		redirect_to new_profile_path
+  		redirect_to "session#dashboard"
   	else
   		flash[:notice] = "Form is invalid!"
   		render "new"

@@ -3,6 +3,7 @@
 <head>
 	<title>Firn, Social Activites</title>
 	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= stylesheet_link_tag    "session", :media => "all" %>
 	<%= javascript_include_tag "application" %>
 	<%= csrf_meta_tags %>
 
@@ -48,7 +49,7 @@
 			<% end %>
 			<li> <%= link_to "About", about_path, :class => "nav-about" %> </li>
 			<li> <%= link_to "Log In", login_path, :class => "nav-login" %> </li>
-			<li> <%= link_to "Sign Up", "/#signup",:class => "nav-signup" %> </li>
+			<li> <%= link_to "Sign Up", signup_path,:class => "nav-signup" %> </li>
 		</ul>
 	</div>
 </nav>

@@ -20,17 +20,17 @@
 		<%= f.submit "LOG IN", :class => "login-button" %>
     <% end %>
 
-	<div class="login-fb">
+	<div class="social-signup">
 		<% if not current_user %>
-		<%= link_to "Log in with Facebook", "/auth/facebook", id: "sign_in" %>
+		<%= link_to "Log in with Facebook", "/auth/facebook", {class: "facebook-btn login-fb"} %>
+		<% end %>
+
+		<% if not current_user %>
+		<%= link_to "Log in with Twitter", "/auth/facebook", {class: "twitter-btn login-twitter"} %>
 		<% end %>
 	</div>
 
-	<% if not current_user %>
-	<%= link_to "Log in with Twitter", "/auth/facebook", class: "login-twitter" %>
-	<% end %>
-
-	<a id="need-signup" href="/#signup">Need to sign up?</a>
+	<a id="need-signup" href="signup">Need to sign up?</a>
 	<a id="forgot-password" href="/forgot_password">Forgot your password?</a>
     
     <%if flash[:notice]%> 
@@ -40,6 +40,3 @@
     <%end%>
 
 </section>
-
-</body>
-</html>

@@ -335,30 +335,62 @@ a {
 	padding: 2% 2% 6% 4%; 
 }
 
-input[type="email"], input[type="password"] {
+.signup-section #signup-title,
+.login-section #login-title {
+	font-family: "Open Sans";
+	font-weight: bold;
+	font-size: 8em;
+	text-align: left;
+	line-height: 1.2em;
+	color: rgb(255, 255, 255);
+	padding: 10% 2% 4% 5%; 
+}
+
+.invalid_notice{
+	height:25px;
+	width: 200px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.invalid_notice p{
+	text-align: center;
+	margin-top: 3px;
+}
+.invalid_notice{
+	background-color: #FFCCCC;
+	border: 1px solid red;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
 	font-family: "Open Sans";
 	border-radius: 5px;
-	box-shadow: 1px 1px 1px #E5E5E5 !important; // To override sessions.css style
+	box-shadow: 1px 1px 1px #cccccc;
 	width: 35%;
 	height: 50px;
-	margin: -2% -4% 8% 6%;
+	margin: -2% -4% 4% 6%;
 	padding-left: 1%;
 	border: none;
 	outline: none;
 }
 
+input[type="text"]:hover,
 input[type="email"]:hover, input[type="password"]:hover {
-	box-shadow: 1px 1px 2px #bcbaba;
+	box-shadow: 1px 1px 2px #F06D26;
 }
+input[type="text"]:focus,
 input[type="email"]:focus, input[type="password"]:focus {
-	box-shadow: 1px 1px 1px #a3a3a3;
+	box-shadow: 1px 1px 1px #F06D26;
 }
 
-.signup-button {
+.signup-button,
+.login-button {
 	float: right;
 	background-color: #F06D26;
 	border-radius: 5px;
-	box-shadow: 0px 1px 1px #bcbcbc;
+	box-shadow: 0px 1px 1px #bf5318;
 	width: 10%;
 	height: 53px;
 	margin-top: -1.7%;
@@ -376,11 +408,13 @@ input[type="email"]:focus, input[type="password"]:focus {
 	cursor: pointer;
 }
 
-.signup-button:hover {
+.signup-button:hover,
+.login-button:hover {
 	background-color: #f47d3d;
 }
 
-.signup .email-icon{
+.signup-section .email-icon,
+.login-section .email-icon{
 	background: url("/assets/icons.png");
 	width: 18px;
 	height: 18px;
@@ -388,7 +422,8 @@ input[type="email"]:focus, input[type="password"]:focus {
 	position: absolute;
 }
 
-.signup .password-icon{
+.signup-section .password-icon,
+.login-section .password-icon{
 	background: url("/assets/icons.png");
 	width: 18px;
 	height: 18px;
@@ -396,14 +431,13 @@ input[type="email"]:focus, input[type="password"]:focus {
 	position: absolute;
 }
 
-.signup-fb {
+.facebook-btn{
 	float: left;
 	background-color: #4763B2;
 	border-radius: 5px;
-	box-shadow: 0px 1px 1px #bcbcbc;
+	box-shadow: 0px 1px 1px #233d87;
 	width: 15%;
 	height: 30px;
-	margin-top: -5%;
 	margin-left: 6%;
 	padding-top: .5%;
 	font-family: "Open Sans";
@@ -417,19 +451,14 @@ input[type="email"]:focus, input[type="password"]:focus {
 	cursor: pointer;
 }
 
-.signup-fb:hover {
-	background-color: #6984ce;
-}
-
-.signup-twitter {
+.twitter-btn {
 	float: left;
 	background-color: #7CC3E5;
 	border-radius: 5px;
-	box-shadow: 0px 1px 1px #bcbcbc;
+	box-shadow: 0px 1px 1px #5aa6c9;
 	width: 15%;
 	height: 30px;
-	margin-top: -5%;
-	margin-left: 22%;
+	margin-left: 2%;
 	padding-top: .5%;
 	font-family: "Open Sans";
 	text-align: center;
@@ -442,8 +471,42 @@ input[type="email"]:focus, input[type="password"]:focus {
 	cursor: pointer;
 }
 
-.signup-twitter:hover {
+.social-signup {
+	margin-bottom: 3%;
+}
+
+.signup-fb,
+.signup-twitter {
+	margin-top: -2%;
+
+}
+.login-fb,
+.login-twitter {
+	margin-top: -2%;
+}
+
+.signup-twitter:hover,
+.login-twitter:hover {
 	background-color: #96d8f7;
+}
+
+.signup-fb:hover,
+.login-fb:hover {
+	background-color: #6984ce;
+}
+
+.login-section #need-signup {
+       float: left;
+       color: #999;
+       margin-top: -4.2%;
+       margin-left: 39%;
+}
+
+.login-section #forgot-password {
+       float: left;
+       color: #999;
+       margin-top: -4.2%;
+       margin-left: 50%;
 }
 
 .signup #have-account {

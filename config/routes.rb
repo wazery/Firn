@@ -13,7 +13,7 @@ Firn::Application.routes.draw do
 
   match 'about', :to => 'home#about'
 
-  resources :sessions
+  resources :sessions, :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
