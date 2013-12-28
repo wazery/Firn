@@ -2,7 +2,7 @@ require 'digest'
 
 class User < ActiveRecord::Base
 
-  attr_accessor   :password
+  attr_accessor   :password, :password_confirmation
   attr_accessible :name, :email, :password, :password_confirmation
 
   EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -10,11 +10,16 @@ class User < ActiveRecord::Base
   validates :name,     :presence     => true,
                        :length       => { :maximum => 50 }
   validates :email,    :presence     => true,
+                       :length       => { :maximum => 50 },
                        :format       => EMAIL_REGEX,
                        :uniqueness   => { :case_sensitive => false }
   validates :password, :presence     => true,
-                       #:confirmation => true
+                       :confirmation => true,
                        :length       => { :in => 8..40 }
+
+  validates :password_confirmation, :presence => true,
+                                   :confirmation => true,
+                                   :length       => { :in => 8..40 }
 
   before_save :encrypt_password
 
@@ -47,6 +52,6 @@ class User < ActiveRecord::Base
   end
 
   def encrypt(string)
-    Digest::SHA2.hexdigest("#{salt}--#{string}")
+    Digest::SHA2.hexdigest("#{self.password_salt}--#{string}")
   end
 end

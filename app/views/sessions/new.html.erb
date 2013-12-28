@@ -2,12 +2,6 @@
 
 	<h1 id="login-title">LOG IN</h1>
 
-	<%if not flash[:notice].blank? %> 
-		<div class="invalid_notice">
-			<p><%=flash[:notice]%></p>
-		</div>
-	<%end%>
-
 	<%= form_for(:session, url: sessions_path) do |f| %>
 		<%=f.text_field :username, :placeholder => "Enter your user name", :class => "username-label" %>
 
@@ -21,13 +15,9 @@
     <% end %>
 
 	<div class="social-signup">
-		<% if not current_user %>
 		<%= link_to "Log in with Facebook", "/auth/facebook", {class: "facebook-btn login-fb"} %>
-		<% end %>
 
-		<% if not current_user %>
 		<%= link_to "Log in with Twitter", "/auth/facebook", {class: "twitter-btn login-twitter"} %>
-		<% end %>
 	</div>
 
 	<a id="need-signup" href="signup">Need to sign up?</a>
