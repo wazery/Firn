@@ -9,10 +9,11 @@ class UsersController < ApplicationController
   def create
   	@user = User.new(params[:user])
   	if @user.save
-  		session[:user_id] = @user.id
+      sign_in @user
+      flash[:success] = "You #{@user.name} successfully logged in"
   		redirect_to "/" #"session#dashboard"
   	else
-  		flash[:notice] = "Data Entered is Invalid!"
+  		flash.now[:notice] = "Data Entered is Invalid!"
   		render "new"
   	end
   end

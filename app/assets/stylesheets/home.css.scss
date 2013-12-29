@@ -8,7 +8,7 @@
 }
 
 body {
-	background-image: url('/assets/sd1.jpg');
+	background-image: url('/assets/sd.jpg');
 	background-color: #cccccc;
 	//background-position: -180px -180px;
 	background-repeat: no-repeat;
@@ -347,12 +347,13 @@ a {
 }
 
 .invalid_notice{
+	float: left;
 	height: 35px;
 	width: 200px;
 	margin: auto;
-	margin-top: -4%;
-	margin-bottom: 3%;
-	background-color: #750707;
+	margin-top: -17%;
+	margin-left: 48%;
+	background-color: rgba(36, 22, 22, 0.63);
 	border: 1px solid rgba(197, 197, 197, 0.22);
 	border-radius: 10px;
 }
@@ -361,44 +362,40 @@ a {
 	line-height: 2em;
 	font-weight: bold;
 	text-shadow: .5px 1px 1px #000;
-	color: white;
+	color: red;
 }
-//.field_with_errors {
-//	background-color: red;
-//	width: 35%;
-//	height: 50px;
-//}
-
-
-//.field_with_errors label {
-//		background-color: #fff;
-//}
 
 #error_explanation {
-//width: 400px;
-//border: 2px solid red;
-//padding: 7px;
-//padding-bottom: 12px;
-//margin-bottom: 20px;
-//background-color: #f0f0f0;
+	float: right;
+	margin-top: -26.5%;
+	margin-right: 13%;
+	color: #BDBDBD;
+	background-color: rgba(36, 22, 22, 0.63);
+	border-radius: 8px;
+	line-height: 1.2em;
+	border-width: 2px;
+	border-color: white;
+	padding: .6%;
+	list-style: inherit;
+	padding-left: 2%;
 }
 #error_explanation h2 {
-text-align: left;
-font-weight: bold;
-padding: 5px 5px 5px 15px;
-font-size: 12px;
-margin: -7px;
-background-color: #c00;
-color: #fff;
+	text-align: left;
+	font-weight: bold;
+	padding: 5px 5px 5px 15px;
+	font-size: 12px;
+	margin: -7px;
+	background-color: #c00;
+	color: #fff;
 }
 #error_explanation p {
-color: #333;
-margin-bottom: 0;
-padding: 5px;
+	color: #333;
+	margin-bottom: 0;
+	padding: 5px;
 }
 #error_explanation ul li {
-font-size: 12px;
-list-style: square;
+	font-size: 12px;
+	list-style: square;
 }
 
 input[type="text"],

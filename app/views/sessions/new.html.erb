@@ -2,12 +2,18 @@
 
 	<h1 id="login-title">LOG IN</h1>
 
+    <%if flash.now[:notice]%> 
+    	<div class="invalid_notice">
+    	<p><%=flash.now[:notice]%></p>
+    	</div>
+    <%end%>
+
 	<%= form_for(:session, url: sessions_path) do |f| %>
-		<%=f.text_field :username, :placeholder => "Enter your user name", :class => "username-label" %>
+		<%=f.text_field :email, :placeholder => "Enter your email address", :class => "username-label" %>
 
 		<span class="email-icon"></span>
 
-		<%= f.text_field :password, :placeholder => "Enter your password", :class => "password-label" %>
+		<%= f.password_field :password, :placeholder => "Enter your password", :class => "password-label" %>
 
 		<span class="password-icon"></span>
 
@@ -20,13 +26,7 @@
 		<%= link_to "Log in with Twitter", "/auth/facebook", {class: "twitter-btn login-twitter"} %>
 	</div>
 
-	<a id="need-signup" href="signup">Need to sign up?</a>
-	<a id="forgot-password" href="/forgot_password">Forgot your password?</a>
-    
-    <%if flash[:notice]%> 
-    	<div class="invalid_notice">
-    	<p><%=flash[:notice]%></p>
-    	</div>
-    <%end%>
+	<%= link_to "Need to sign up?", "signup", :id => "need-signup" %>
+	<%= link_to "Forgot your password?", "/forgot_password", :id => "forgot-password" %>
 
 </section>

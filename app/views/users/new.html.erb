@@ -25,6 +25,14 @@
 		<%= f.submit "SIGN UP", :class => "signup-button" %>
     <% end %>
 
+    <% if @user.errors.any? %>
+      <ul id="error_explanation">
+        <% for message in @user.errors.full_messages %>
+        <li><%= message %></li>
+        <% end %>
+      </ul>
+    <% end %>
+
 	<div class="social-signup">
 		<%= link_to "Sign up with Facebook", "/auth/facebook", {class: "signup-fb facebook-btn"} %>
 

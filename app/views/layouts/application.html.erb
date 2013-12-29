@@ -48,8 +48,13 @@
 				<li><%= link_to "Home", "/", :class => "nav-home" %> </li>
 			<% end %>
 			<li> <%= link_to "About", about_path, :class => "nav-about" %> </li>
-			<li> <%= link_to "Log In", login_path, :class => "nav-login" %> </li>
-			<li> <%= link_to "Sign Up", signup_path,:class => "nav-signup" %> </li>
+			<% if current_user %>
+				<li><%= link_to "Sign Out", "signout" %></li>
+				<li><%= link_to current_user.name, '/' %></li>
+			<% else %>
+				<li> <%= link_to "Log In", login_path, :class => "nav-login" %> </li>
+				<li> <%= link_to "Sign Up", signup_path,:class => "nav-signup" %> </li>
+			<% end %>
 		</ul>
 	</div>
 </nav>

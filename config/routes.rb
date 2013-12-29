@@ -1,10 +1,14 @@
 Firn::Application.routes.draw do
   
+  resources :users
+  resources :sessions, :only => [:new, :create, :destroy] 
+
   root :to => 'sessions#index', :as => 'welcome'
 
   get 'home' => 'home#index', :as => 'home'
 
   get 'signup' => 'users#new', :as => 'signup'
+
   get 'login' => 'sessions#new', :as => 'login'
   match 'signout', to: 'sessions#destroy', as: 'signout'
 
@@ -12,8 +16,6 @@ Firn::Application.routes.draw do
   match 'auth/failure', to: redirect('/')
 
   match 'about', :to => 'home#about'
-
-  resources :sessions, :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -18,8 +18,8 @@ class User < ActiveRecord::Base
                        :length       => { :in => 8..40 }
 
   validates :password_confirmation, :presence => true,
-                                   :confirmation => true,
-                                   :length       => { :in => 8..40 }
+                                    :confirmation => true,
+                                    :length       => { :in => 8..40 }
 
   before_save :encrypt_password
 
@@ -30,18 +30,22 @@ class User < ActiveRecord::Base
       user.name = auth.info.name
       user.oauth_token = auth.credentials.token
       user.oauth_expires_at = Time.at(auth.credentials.expires_at)
-      user.save!
+      user.save(:validate => false) # Bypass validations, to not fail in them
     end
   end
 
   def has_password?(submitted_password)
-    encrypt_password == encrypt(submitted_password)
+    encrypted_password == encrypt(submitted_password)
   end
 
   def self.authenticate(email, submitted_password)
     user = find_by_email(email)
-    return nil if user.nil?
-    return user if user.has_password?(submitted_password)
+    ( user && user.has_password?(submitted_password) ) ? user : nil
+  end
+
+  def self.authenticate_with_salt(id, cookie_salt)
+    user = find_by_id(id)
+    (user && user.password_salt == cookie_salt) ? user : nil
   end
 
   private
@@ -54,4 +58,5 @@ class User < ActiveRecord::Base
   def encrypt(string)
     Digest::SHA2.hexdigest("#{self.password_salt}--#{string}")
   end
+
 end
