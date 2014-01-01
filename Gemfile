@@ -11,7 +11,6 @@ gem 'rails', '3.2.13'
 gem 'better_errors'
 gem 'binding_of_caller'
 
-gem 'newrelic_rpm'
 gem 'rails_12factor'
 gem 'pg'
 
@@ -19,6 +18,7 @@ gem 'nprogress-rails'
 
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'koala'
 
 # Gems used only for assets and not required
 # in production environments by default.

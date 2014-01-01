@@ -8,7 +8,7 @@
 }
 
 body {
-	background-image: url('/assets/sd.jpg');
+	background-image: url('/assets/sd1.jpg');
 	background-color: #cccccc;
 	//background-position: -180px -180px;
 	background-repeat: no-repeat;
@@ -575,7 +575,7 @@ input[type="email"]:focus, input[type="password"]:focus {
 	padding-top: 9%;
 }
 .tabs {
-	height: 290px;
+	height: 490px;
 }
 .tabs input[type=radio] {
 	position: absolute;
@@ -631,11 +631,11 @@ input[type="email"]:focus, input[type="password"]:focus {
 	display: none;
 	text-align: left;
 	width: 100%;
-	height: 90%;
+	height: 95%;
 	font-size: 20px;
 	line-height: 140%;
 	padding-top: 10px;
-	background: rgba(255,255,255,.5);
+	background: rgba(0,0,0,.2);
 	padding: 15px;
 	color: white;
 	position: absolute;
@@ -649,6 +649,73 @@ input[type="email"]:focus, input[type="password"]:focus {
 	animation-duration: 0.5s;
 }
 
+#post {
+	background-color: rgba(100, 100, 100, 0.42);
+	border-radius: 15px;
+	box-shadow: 0px 50px 10px -4px rgba(0, 0, 0, 0.52) inset;
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgba(165, 165, 165, 0.34);
+	width: 45%;
+	height: 35%;
+	margin-bottom: 2%;
+}
+
+#post:hover {
+	box-shadow: 0px 50px 10px -4px rgba(2, 18, 19, 0.52) inset;
+}
+
+#post h1 {
+	font-family: "Open Sans";
+	font-size: .5em;
+	letter-spacing: .2em;
+	color: #FFFFFF;
+}
+#post #name {
+	margin-top: -9.5%;
+	margin-left: 13%;
+}
+
+#post #date {
+	float: right;
+	margin-top: -6%;
+	margin-right: 2%;
+}
+
+#post img {
+	border-radius: 50%;
+	width: 100%;
+	max-width: 40px;
+	margin-left: 3%;
+	margin-top: .8%;
+}
+
+#post p {
+	font-family: "Open Sans";
+	font-size: .6em;
+	line-height: 1.6em;
+	margin-top: 5%;
+	margin-left: 4%;
+}
+
+.float-right {
+	float: right;
+}
+
+.float-left {
+	float: left;
+}
+
+.next-page {
+	color: #606266;
+	position: absolute;
+	right: 2%;
+	bottom: 2%;
+}
+
+.next-page:hover {
+	color: #E8641B;
+}
 
 /* END OF DASHBARD STYLES */
 

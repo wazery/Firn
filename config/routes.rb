@@ -5,7 +5,7 @@ Firn::Application.routes.draw do
 
   root :to => 'sessions#index', :as => 'welcome'
 
-  get 'home' => 'home#index', :as => 'home'
+  match 'dashboard', :to => 'dashboard#index', :as => 'dashboard'
 
   get 'signup' => 'users#new', :as => 'signup'
 
