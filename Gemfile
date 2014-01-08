@@ -20,6 +20,8 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'koala'
 
+gem 'font-awesome-sass'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

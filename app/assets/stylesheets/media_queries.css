@@ -51,7 +51,11 @@
 
 	/* END OF NAV QUERIES */
 	.top-bar-section #main-text {
-		font-size: 1.4em;
+		font-size: 2em;
+	}
+	.top-bar-section #sub-text {
+		font-size: 1em;
+		padding: 0 2% 0 2%;
 	}
 
 	.button-container {
@@ -252,4 +256,15 @@ TODO: Change it with another smaller image*/
 	#testimonial3 {
 		display: none;
 	}
+}
+
+@media screen and (max-height: 600px) {
+    /* things inside here will only have an effect if the browser window shows
+       less than 500 px in the height, so here I apply the special rules */
+
+    #scroll {
+    	position: absolute;
+    	opacity: 1;
+    	transition: opacity 200ms ease-in-out;
+    }
 }

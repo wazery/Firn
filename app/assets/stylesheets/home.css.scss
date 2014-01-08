@@ -8,7 +8,7 @@
 }
 
 body {
-	background-image: url('/assets/sd1.jpg');
+	background-image: url('/assets/sd3.jpg');
 	background-color: #cccccc;
 	//background-position: -180px -180px;
 	background-repeat: no-repeat;
@@ -22,6 +22,21 @@ body {
 
 	overflow-y: scroll;
 	overflow-x: hidden;
+}
+
+/* Override the scrollbar style */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+	 -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 }
 
 .wrapper {
@@ -65,11 +80,11 @@ a {
 	padding-right: 20px;
 	float: left;
 	font-weight: normal;
-	font-family: "Open Sans";
+	font-family: "Raleway";
 }
 
 .nav-list li a {
-	color: #f9f9f9;
+	color: rgba(255,255,255,.5);
 	letter-spacing: 2px;
 	font-size: 16px;
 	font-weight: bold;
@@ -83,11 +98,17 @@ a {
 }
 
 .nav-list li a:hover {
+	color: rgba(255,255,255,1);
 	padding-bottom: 5px;
 	border-bottom: 3px solid #f9f9f9;
 }
 
+.notifications {
+
+}
+
 .underline {
+	color: rgba(255,255,255,1) !important;
 	padding-bottom: 5px;
 	border-bottom: 3px solid #f9f9f9;
 }
@@ -112,11 +133,22 @@ a {
 }
 
 .top-bar-section #main-text {
-	font-family: "Open Sans";
-	font-weight: bold;
-	font-size: 1.6em;
-	letter-spacing: 5px;
+	font-family: "Raleway";
+	font-weight: 800;
+	font-size: 2em;
+	letter-spacing: 4px;
+	text-transform: none;
 	text-align: center;
+}
+
+.top-bar-section #sub-text {
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 1.4em;
+	text-transform: none;
+	text-align: center;
+	margin-top: 4%;
+	//padding: 0 2% 0 2%;
 }
 
 .button-container  {
@@ -335,15 +367,25 @@ a {
 	padding: 2% 2% 6% 4%; 
 }
 
+.login-section {
+	margin-bottom: 4%;
+}
 .signup-section #signup-title,
 .login-section #login-title {
-	font-family: "Open Sans";
+
+	font-family: "Raleway";
 	font-weight: bold;
-	font-size: 8em;
+	font-size: 4em;
+	letter-spacing: 5px;
+	text-align: left;
+	color: white;
+	margin-left: 5.5%;
+	padding-top: 9%;
+	padding-bottom: 4%;
+
 	text-align: left;
 	line-height: 1.2em;
-	color: rgb(255, 255, 255);
-	padding: 10% 2% 4% 5%; 
+	//padding: 10% 2% 4% 5%; 
 }
 
 .invalid_notice{
@@ -455,7 +497,7 @@ input[type="email"]:focus, input[type="password"]:focus {
 
 .signup-section .email-icon,
 .login-section .email-icon{
-	background: url("/assets/icons.png");
+	background: url("/assets/icons.png"); // TODO: replace it with font awesome
 	width: 18px;
 	height: 18px;
 	background-position: 0 -954px;
@@ -464,7 +506,7 @@ input[type="email"]:focus, input[type="password"]:focus {
 
 .signup-section .password-icon,
 .login-section .password-icon{
-	background: url("/assets/icons.png");
+	background: url("/assets/icons.png"); // TODO: replace it with font awesome
 	width: 18px;
 	height: 18px;
 	background-position: 0 -936px;
@@ -474,7 +516,7 @@ input[type="email"]:focus, input[type="password"]:focus {
 .facebook-btn{
 	float: left;
 	background-color: #4763B2;
-	border-radius: 5px;
+	border-radius: 25px;
 	box-shadow: 0px 1px 1px #233d87;
 	width: 15%;
 	height: 30px;
@@ -494,9 +536,9 @@ input[type="email"]:focus, input[type="password"]:focus {
 .twitter-btn {
 	float: left;
 	background-color: #7CC3E5;
-	border-radius: 5px;
-	box-shadow: 0px 1px 1px #5aa6c9;
-	width: 15%;
+	border-radius: 25px;
+	box-shadow: 0px 1px 1px #218bbc;
+	width: 14%;
 	height: 30px;
 	margin-left: 2%;
 	padding-top: .5%;
@@ -509,6 +551,22 @@ input[type="email"]:focus, input[type="password"]:focus {
 	border: none;
 	outline: none;
 	cursor: pointer;
+}
+
+/*.vertical-line {
+	float: left;
+	margin-top: -1%;
+	margin-left: 6%;
+	height: 100%;
+	border-left: 1px solid rgba(0, 0, 0, 0.44);
+	box-shadow: 1px 0px 0px rgba(194, 192, 204, 0.31);
+}*/
+.fa {
+	font-size: 1.8em;
+	float: left;
+	margin-left: 6%;
+	margin-right: -3%;
+	color: white;
 }
 
 .social-signup {
@@ -527,24 +585,25 @@ input[type="email"]:focus, input[type="password"]:focus {
 
 .signup-twitter:hover,
 .login-twitter:hover {
-	background-color: #96d8f7;
+	background-color: #4cb1e0;
 }
 
 .signup-fb:hover,
 .login-fb:hover {
-	background-color: #6984ce;
+	background-color: #2b4896;
 }
 
 .login-section #need-signup {
        float: left;
-       color: #999;
+       color: white;
        margin-top: -4.2%;
        margin-left: 39%;
 }
 
 .login-section #forgot-password {
        float: left;
-       color: #999;
+       //color: #999;
+       color: white;
        margin-top: -4.2%;
        margin-left: 50%;
 }
@@ -564,8 +623,24 @@ input[type="email"]:focus, input[type="password"]:focus {
 
 /* DASHBARD STYLES */
 
+.fa-th,
+.fa-th-list {
+	float: right;
+	margin-right: 0;
+
+	-webkit-transition: all 100ms ease-in-out;
+	   -moz-transition: all 100ms ease-in-out;
+	    -ms-transition: all 100ms ease-in-out;
+	     -o-transition: all 100ms ease-in-out;
+	        transition: all 100ms ease-in-out;
+}
+.fa-th:hover,
+.fa-th-list:hover {
+	font-size: 2em;
+}
+
 .title {
-	font-family: "Open Sans";
+	font-family: "Raleway";
 	font-weight: bold;
 	font-size: 3.2em;
 	letter-spacing: 5px;
@@ -597,10 +672,10 @@ input[type="email"]:focus, input[type="password"]:focus {
 	display: block;
 	padding: 10px 20px;
 	border-radius: 2px 2px 0 0;
-	color: #C4C4C4;
+	color: #e8641b;
 	font-size: 24px;
-	font-weight: normal;
-	font-family: 'Lily Script One', helveti;
+	font-weight: bold;
+	font-family: 'Raleway';
 	background: rgba(255,255,255,0.2);
 	cursor: pointer;
 	position: relative;
@@ -631,7 +706,7 @@ input[type="email"]:focus, input[type="password"]:focus {
 	display: none;
 	text-align: left;
 	width: 100%;
-	height: 95%;
+	//height: 95%;
 	font-size: 20px;
 	line-height: 140%;
 	padding-top: 10px;
@@ -657,17 +732,19 @@ input[type="email"]:focus, input[type="password"]:focus {
 	border-width: 2px;
 	border-color: rgba(165, 165, 165, 0.34);
 	width: 45%;
-	height: 35%;
+	height: 150px;
 	margin-bottom: 2%;
 }
 
+/*
 #post:hover {
 	box-shadow: 0px 50px 10px -4px rgba(2, 18, 19, 0.52) inset;
 }
+*/
 
 #post h1 {
 	font-family: "Open Sans";
-	font-size: .5em;
+	font-size: .6em;
 	letter-spacing: .2em;
 	color: #FFFFFF;
 }
@@ -678,11 +755,53 @@ input[type="email"]:focus, input[type="password"]:focus {
 
 #post #date {
 	float: right;
+	font-size: .5em;
 	margin-top: -6%;
 	margin-right: 2%;
 }
 
-#post img {
+svg {
+	width: 2em;
+	height: 2em;
+}
+.fill {
+	color: white;
+	position: absolute;
+	top: 12px;
+}
+.has_tooltip {
+	position: relative;
+	outline: none; 
+}
+.has_tooltip:hover {
+	text-decoration: none;
+} 
+.has_tooltip span {
+	border-radius: 25px;
+    z-index: 10;
+    display: none; 
+    padding: 8px 10px;
+    margin-left: 28px;
+    line-height: 16px;
+    color: white;
+    font-size: 1.2em;
+}
+.has_tooltip:hover span{
+    display: inline;
+    position: absolute;
+    color: white ;
+    //border: 1px solid #DCA;
+    background: rgba(0, 0, 0, 0.9);
+}
+.callout {
+	z-index:20;
+	position:absolute;
+	top:30px;
+	border:0;
+	left:-12px;
+}
+
+#post #pic {
 	border-radius: 50%;
 	width: 100%;
 	max-width: 40px;
@@ -692,10 +811,17 @@ input[type="email"]:focus, input[type="password"]:focus {
 
 #post p {
 	font-family: "Open Sans";
-	font-size: .6em;
+	font-size: .8em;
 	line-height: 1.6em;
 	margin-top: 5%;
 	margin-left: 4%;
+
+    overflow: hidden;              /* don't show excess chars */
+    height: 50%;                   /* fixed width */
+
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
 }
 
 .float-right {
@@ -706,8 +832,29 @@ input[type="email"]:focus, input[type="password"]:focus {
 	float: left;
 }
 
+#line {
+	position: absolute;
+	opacity: 0.4;
+}
+#line1{
+	display: none; /* Hide it for now */
+	position: absolute;
+	z-index: 100;
+	font-weight: bold;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Safari and Chrome */
+	-o-transform: rotate(45deg); /* Opera */
+	-moz-transform: rotate(45deg); /* Firefox */
+	top: 50px;
+	left: 25px;
+	padding: 5px 10px 5px 10px;
+	opacity: 0.4;
+	filter: alpha(opacity=20); /* For IE8 and earlier */
+}
+
 .next-page {
-	color: #606266;
+	color: #CACACA;
 	position: absolute;
 	right: 2%;
 	bottom: 2%;
@@ -722,7 +869,7 @@ input[type="email"]:focus, input[type="password"]:focus {
 /* ABOUT PAGE STYLES */
 
 .about-title {
-	font-family: "Open Sans";
+	font-family: "Raleway";
 	font-weight: bold;
 	font-size: 3.2em;
 	letter-spacing: 5px;
@@ -746,7 +893,28 @@ input[type="email"]:focus, input[type="password"]:focus {
 
 /* END OF ABOUT PAGE STYLES */
 
+.scroll-to-top {
+	position: fixed;
+	top: 80%;
+	right: 0%;
+	float: right;
+	margin-right: 3.5%;
+	margin-top: 1%;
+	width: 21px;
+	height: 21px;
+}
+
+#scroll {
+	opacity: 0;
+	transition: opacity 200ms ease-in-out;
+}
+
+#scroll:hover {
+	opacity: .5;
+}
+
 footer {
+	position: absolute;
 	font-size: 14px;
 	background-color: #ffffff;
 	width: 100%;

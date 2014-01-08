@@ -1,12 +1,12 @@
 <section class="signup-section">
 
-	<h1 id="signup-title">SIGN UP</h1>
+	<h1 id="signup-title top">SIGN UP</h1>
 
-	<%if not flash[:notice].blank? %> 
+	<% if not flash[:notice].blank? %> 
 		<div class="invalid_notice">
-			<p><%=flash[:notice]%></p>
+			<p><%= flash[:notice] %></p>
 		</div>
-	<%end%>
+	<% end %>
 
 	<%= form_for(:user, url: users_path) do |f| %>
 
@@ -34,9 +34,14 @@
     <% end %>
 
 	<div class="social-signup">
-		<%= link_to "Sign up with Facebook", "/auth/facebook", {class: "signup-fb facebook-btn"} %>
-
-		<%= link_to "Sign up with Twitter", "/auth/facebook", {class: "signup-twitter twitter-btn"} %>
+		<div class="signup-fb facebook-btn">
+			<%= link_to "Sign up with Facebook", "/auth/facebook" %>
+			<i class="fa fa-facebook-square"></i>
+		</div>
+		<div class="signup-twitter twitter-btn">
+			<%= link_to "Sign up with Twitter", "/auth/facebook" %>
+			<i class="fa fa-twitter-square"></i>
+		</div>
 	</div
 
 </section>

@@ -1,41 +1,47 @@
 <section class="posts-section">
 
-	<h1 class="title">DASHBOARD</h1>
+	<h1 class="title" id="top">DASHBOARD</h1>
 
 	<ul class="tabs">
+
+	<a href="#", class="fa fa-th"></a>
+	<a href="#", class="fa fa-th-list"></a>
+	
 		<li>
 			<input type="radio" checked name="tabs" id="tab1">
 			<label for="tab1">Facbook</label>
 			<div id="tab-content1" class="tab-content animated fadeIn">
-				<!--div>
-				<% if%>
-					 <% if @posts %>
-						 <% for post in @posts %>
-						 	<%= h post["name"] %>
-						 	<br>
-						 <% end %>
+				 <% if @posts %>
+					 <% @posts.each do |post| %>
+						<%= content_tag :div, :id => "post", :class => "float-left" do %>
+							<img id="pic" src="/assets/profile-ico2.jpg">
+							<h1 id="name"><%= post['from']['name'] %></h1>
+							<h1 id="date" class="has_tooltip"><%= get_short_date(post['created_time']) %>
+							    <span>
+							    <svg viewBox="0 0 20 20" preserveAspectRatio="xMidYMid">
+							    	<polygon class="fill" points="1,0 20,10 1,20"></polygon>
+							    </svg>
+							   		<!--img class="callout" src="/assets/callout.gif" /-->
+							        <%= get_tooltip_date(post['created_time']) %>
+							    </span>
+						    </h1>
+
+							<% if post['type'] == 'status' %>
+								<p><%= post['message'] %></p>
+							<% end %>
+							<% if post['type'] == 'link' %>
+							<% end %>
+							<% if post['type'] == 'photo' %>
+								<p><%= post['story'] %></p>
+
+							<% end %>
+							<% if post['type'] == 'video' %>
+							<% end %>
+						<% end %>
+					 	<br>
 					 <% end %>
-					 <%= link_to 'Next', url_for(:page => @posts.next_page_params), :class => 'next-page' %>
 				 <% end %>
-				</div-->
-			<div id="post" class="float-left">
-				<img src="/assets/profile-ico2.jpg">
-				<h1 id="name">Islam Wazery</h1>
-				<h1 id="date">July 20, 2013</h1>
-				<p>Thank you all for the great Iftar and company that I had today! — feeling blessed with Mohammed Gamal and 14 others.</p>
-			</div>
-			<div id="post" class="float-right">
-				<img src="/assets/profile-ico.jpg">
-				<h1 id="name">Fayruz Raisa</h1>
-				<h1 id="date">November 29, 2013</h1>
-				<p>Thank you, Facebook fans, for helping make these 12 stories our most popular posts of the year.</p>
-			</div>
-			<div id="post" class="float-left">
-				<img src="/assets/profile-ico3.jpg">
-				<h1 id="name">Islam Wazery</h1>
-				<h1 id="date">December 23, 2013</h1>
-				<p>Thank you all for the great Iftar and company that I had today! — feeling blessed with Mohammed Gamal and 14 others.</p>
-			</div>
+				 <%= link_to 'Next', url_for(:page => @posts.next_page_params), :class => 'next-page' %>
 			</div>
 		</li>
 		<li>

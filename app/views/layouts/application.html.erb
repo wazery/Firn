@@ -3,7 +3,6 @@
 <head>
 	<title>Firn, Social Activites</title>
 	<%= stylesheet_link_tag    "application", :media => "all" %>
-	<%= stylesheet_link_tag    "session", :media => "all" %>
 	<%= javascript_include_tag "application" %>
 	<%= csrf_meta_tags %>
 
@@ -15,6 +14,9 @@
 <div id="fb-root"></div>
 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
+<link href="//fonts.googleapis.com/css?family=Lato:400" rel="stylesheet" type="text/css">
 
 <script>(
 	function(d, s, id) {
@@ -37,12 +39,12 @@
 
 <div id="container">
 
-<nav class="nav-bar">
+<nav class="nav-bar top">
 	<div class="nav-hold">
 		<a href="/" class="nav-logo"> 
 			<img id="logo" src="/assets/logo.png" alt="Firn, the social activities!" /> 
 		</a>
-		<a class="nav-menu" href="#menu">Menu &#9776;</a>
+		<a class="nav-menu fa fa-bars" href="#menu"> Menu</a>
 		<ul class="nav-list" id="nav">
 			<% if not request.env['PATH_INFO'] == "/" %>
 				<li><%= link_to "Home", "/", :class => "nav-home" %> </li>
@@ -51,6 +53,9 @@
 			<% if current_user %>
 				<li><%= link_to "Sign Out", "signout" %></li>
 				<li><%= link_to current_user.name, '/' %></li>
+				
+				<li><%= link_to "", "", :class => "notifications fa fa-bullhorn" %></li>
+				<li><%= link_to "", "", :class => "settings fa fa-cog" %></li>
 			<% else %>
 				<li> <%= link_to "Log In", login_path, :class => "nav-login" %> </li>
 				<li> <%= link_to "Sign Up", signup_path,:class => "nav-signup" %> </li>
@@ -69,6 +74,8 @@
 	</div-->
 	<%= yield %>
 </div>
+
+<a href="#top" class="scroll-to-top"><img id="scroll" src="/assets/scroll-to-top.png"></a>
 
 <footer>
 	<p id="appreciation-text">Show your appreciation</p>
